@@ -34,9 +34,9 @@ jobs:
                 mkdir -p ~/.ssh/
                 echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/key.pem
                 chmod 600 ~/.ssh/key.pem
-                ssh-keyscan -H ${{ vars.SERVER_IP }} >> ~/.ssh/known_hosts
+                ssh-keyscan -H ${{ vars.npm  }} >> ~/.ssh/known_hosts
   
   
             - name: Deploying Docker image
               run: |
-                    ssh -i ~/.ssh/key.pem ubuntu@${{ vars.SERVER_IP }} 'aws ecr get-login-password --region ${{ secrets.AWS_ECR_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_URL }} && docker pull ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:latest && docker stop frontend && docker rm frontend && docker rmi ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current && docker tag ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:latest ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current && docker run -d --name frontend -p 2200:2200 ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current'
+                    ssh -i ~/.ssh/key.pem ubuntu@${{ vars.SERVER_IP }} 'aws ecr get-login-password --region ${{ secrets.AWS_ECR_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_URL }} && docker pull ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:latest && docker stop frontend && docker rm frontend && docker rmi ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current && docker tag ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:latest ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current && docker run -d --name frontend -p 2200:3000 ${{ secrets.AWS_ECR_URL }}/go4explore-frontend:current'
