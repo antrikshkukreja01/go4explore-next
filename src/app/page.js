@@ -23,8 +23,8 @@ const page = () => {
   return (
     <>
       {" "}
-      {/* <Home /> */}
-      <Upcoming />
+      <Home />
+      {/* <Upcoming /> */}
       {/* <ProductPage /> */}
       {/* <Login /> */}
       {/* <BookNow /> */}

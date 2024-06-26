@@ -25,3 +25,16 @@ export async function fetchTripsData() {
     throw new Error(`Failed to fetch data: ${error.message}`);
   }
 }
+
+//  ==================== TRIPS CATEGORY ====================
+
+export async function fetchTripsCategoryData(slug) {
+  try {
+    const response = await axios.get(
+      "https://go4explore-api.cyberoze.com/api/trips-category/" + params
+    );
+    return response.data;
+  } catch (error) {
+    throw new Error(`Failed to fetch data: ${error.message}`);
+  }
+}
