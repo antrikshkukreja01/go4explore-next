@@ -3,8 +3,6 @@ import location from "../assets/img/webp/navigation_pin.webp";
 import search from "../assets/img/webp/search.webp";
 import Image from "next/image";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 const Header = () => {
   var settings = {

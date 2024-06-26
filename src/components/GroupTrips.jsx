@@ -1,6 +1,6 @@
 "use client";
-
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
+import { fetchHomeData } from "./Api";
 import Slider from "react-slick";
 import img1 from "../assets/img/webp/ProductPhoto.webp";
 import star_emoji from "../assets/img/png/star_emoji.png";
@@ -8,6 +8,22 @@ import Image from "next/image";
 
 const GroupTrips = () => {
   const [activeMonth, setActiveMonth] = useState(null);
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetchHomeData()
+      .then((data) => setData(data))
+      .catch((error) => setError(error));
+  }, []);
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   var settings = {
     dots: false,
@@ -68,7 +84,7 @@ const GroupTrips = () => {
           </p>
 
           {/* Month Selector */}
-          <div className="d-flex pb-3 align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
+          <div className="d-flex align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
             {[
               "June 2024",
               "July 2024",
@@ -96,160 +112,61 @@ const GroupTrips = () => {
           </div>
 
           <Slider {...settings}>
-            <div className="d-flex flex-column px-3 px-sm-4">
-              <div className=" position-relative mb-3">
-                <Image
-                  className="rounded-4  w-100 "
-                  src={img1}
-                  height={300}
-                  alt="img"
-                />
-                <span className=" bg_yellow rounded-3 position-absolute text-black translate-middle fw-normal fs_xsm font_poppins px-2 py-1 top-100 start-50">
-                  5 Nights 6 Days
-                </span>
-              </div>
-              <h2 className="mt-3 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                Leh Ladakh with Turtuk - Backpacking & Bike Trip
-              </h2>
-              <div className="d-flex align-items-xl-center  justify-content-between justify-content-sm-start  gap-1 gap-sm-3">
-                <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                  ₹ 25,000
-                </p>
-                <p className="mb-0 text-black fs-md fw-semibold">
-                  ₹ 20,000 per person
-                </p>
-              </div>
-              <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                <a
-                  className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                  href="#"
-                >
-                  Trip Details
-                </a>
-                <a
-                  className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
-                  href="#"
-                >
-                  Request Callback
-                </a>
-              </div>
-            </div>
-            <div className="d-flex flex-column px-3 px-sm-4">
-              <div className=" position-relative mb-3">
-                <Image
-                  className="rounded-4  w-100 "
-                  src={img1}
-                  height={300}
-                  alt="img"
-                />
-                <span className=" bg_yellow rounded-3 position-absolute text-black translate-middle fw-normal fs_xsm font_poppins px-2 py-1 top-100 start-50">
-                  5 Nights 6 Days
-                </span>
-              </div>
-              <h2 className="mt-3 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                Leh Ladakh with Turtuk - Backpacking & Bike Trip
-              </h2>
-              <div className="d-flex align-items-xl-center  justify-content-between justify-content-sm-start  gap-1 gap-sm-3">
-                <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                  ₹ 25,000
-                </p>
-                <p className="mb-0 text-black fs-md fw-semibold">
-                  ₹ 20,000 per person
-                </p>
-              </div>
-              <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                <a
-                  className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                  href="#"
-                >
-                  Trip Details
-                </a>
-                <a
-                  className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
-                  href="#"
-                >
-                  Request Callback
-                </a>
-              </div>
-            </div>
-            <div className="d-flex flex-column px-3 px-sm-4">
-              <div className=" position-relative mb-3">
-                <Image
-                  eImage
-                  className="rounded-4  w-100 "
-                  src={img1}
-                  height={300}
-                  alt="img"
-                />
-                <span className=" bg_yellow rounded-3 position-absolute text-black translate-middle fw-normal fs_xsm font_poppins px-2 py-1 top-100 start-50">
-                  5 Nights 6 Days
-                </span>
-              </div>
-              <h2 className="mt-3 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                Leh Ladakh with Turtuk - Backpacking & Bike Trip
-              </h2>
-              <div className="d-flex align-items-xl-center  justify-content-between justify-content-sm-start  gap-1 gap-sm-3">
-                <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                  ₹ 25,000
-                </p>
-                <p className="mb-0 text-black fs-md fw-semibold">
-                  ₹ 20,000 per person
-                </p>
-              </div>
-              <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                <a
-                  className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                  href="#"
-                >
-                  Trip Details
-                </a>
-                <a
-                  className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
-                  href="#"
-                >
-                  Request Callback
-                </a>
-              </div>
-            </div>
-            <div className="d-flex flex-column px-3 px-sm-4">
-              <div className=" position-relative mb-3">
-                <Image
-                  eImage
-                  className="rounded-4  w-100 "
-                  src={img1}
-                  height={300}
-                  alt="img"
-                />
-                <span className=" bg_yellow rounded-3 position-absolute text-black translate-middle fw-normal fs_xsm font_poppins px-2 py-1 top-100 start-50">
-                  5 Nights 6 Days
-                </span>
-              </div>
-              <h2 className="mt-3 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                Leh Ladakh with Turtuk - Backpacking & Bike Trip
-              </h2>
-              <div className="d-flex align-items-xl-center  justify-content-between justify-content-sm-start  gap-1 gap-sm-3">
-                <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                  ₹ 25,000
-                </p>
-                <p className="mb-0 text-black fs-md fw-semibold">
-                  ₹ 20,000 per person
-                </p>
-              </div>
-              <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                <a
-                  className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                  href="#"
-                >
-                  Trip Details
-                </a>
-                <a
-                  className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
-                  href="#"
-                >
-                  Request Callback
-                </a>
-              </div>
-            </div>
+            {data.data.packages.map((pkg) => (
+              <li className="px-3" key={pkg.id}>
+                <div className="position-relative mb-4">
+                  <img
+                    className="rounded-4 w-100"
+                    src={pkg.image}
+                    height={280}
+                    alt="img"
+                  />
+                  <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
+                    {pkg.duration}
+                  </p>
+                </div>
+                <div className="h_160 flex-column d-flex justify-content-between">
+                  <article>
+                    <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
+                      {pkg.slug}
+                    </h2>
+                    {pkg.discounted_price ? (
+                      <div className="d-flex align-items-center gap-4">
+                        <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
+                          ₹{pkg.price}
+                        </p>
+                        <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
+                          ₹{pkg.discounted_price} per person
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
+                        ₹{pkg.price} per person
+                      </p>
+                    )}
+                    {pkg.discount && (
+                      <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
+                        Discount: ₹{pkg.discount}
+                      </p>
+                    )}
+                  </article>
+                  <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
+                    <a
+                      className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
+                      href="#"
+                    >
+                      Trip Details
+                    </a>
+                    <a
+                      className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
+                      href="#"
+                    >
+                      Request Callback
+                    </a>
+                  </div>
+                </div>
+              </li>
+            ))}
           </Slider>
         </div>
       </section>
