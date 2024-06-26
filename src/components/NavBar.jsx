@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../assets/img/webp/logo.webp";
 import customerservice from "../assets/img/webp/customer-service.webp";
+import Link from "next/link";
 
 const Nav = () => {
   const [navShow, setNavShow] = useState(false);

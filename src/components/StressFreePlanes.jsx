@@ -35,6 +35,7 @@ const StressFreePlanes = () => {
           <Slider className=" d-lg-none" {...settings}>
             <div className=" mt-4 w_95 mx-auto  d-flex d-sm-inline-block   ">
               <div
+                className=" rounded-4"
                 style={{
                   backgroundImage: `url(${bg.src})`,
                   width: "100%",
@@ -61,8 +62,8 @@ const StressFreePlanes = () => {
                   </article>
                   <Image
                     width={120}
-                    height={200}
-                    className=" width_100"
+                    height={120}
+                    className=" mt-3"
                     src={location_pin}
                     alt="location_pin"
                   />
@@ -70,7 +71,17 @@ const StressFreePlanes = () => {
               </div>
             </div>
             <div className=" mt-4 w_95 mx-auto  d-flex d-sm-inline-block   ">
-              <div className=" bg_gradient h-100">
+              <div
+                className=" rounded-4"
+                style={{
+                  backgroundImage: `url(${bg.src})`,
+                  width: "100%",
+                  height: "100%",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                }}
+              >
                 <div className="box d-flex flex-column justify-content-between tranform_2 h-300 position-relative overflow-hidden ">
                   <Image
                     className=" position-absolute end-0 bottom-0"
@@ -88,8 +99,8 @@ const StressFreePlanes = () => {
                   </article>
                   <Image
                     width={120}
-                    height={200}
-                    className=" w_120 "
+                    height={120}
+                    className=" mt-3"
                     src={msg_query}
                     alt="location_pin"
                   />
@@ -98,6 +109,7 @@ const StressFreePlanes = () => {
             </div>
             <div className=" mt-4 w_95 mx-auto d-flex d-sm-inline-block   ">
               <div
+                className=" rounded-4"
                 style={{
                   backgroundImage: `url(${bg.src})`,
                   width: "100%",
@@ -124,8 +136,8 @@ const StressFreePlanes = () => {
                   </article>
                   <Image
                     width={120}
-                    height={200}
-                    className=" w_120"
+                    height={120}
+                    className=" mt-3"
                     src={travling_van}
                     alt="location_pin"
                   />
@@ -134,6 +146,7 @@ const StressFreePlanes = () => {
             </div>
             <div className=" mt-4 w_95 mx-auto d-flex d-sm-inline-block   ">
               <div
+                className=" rounded-4"
                 style={{
                   backgroundImage: `url(${bg.src})`,
                   width: "100%",
@@ -159,7 +172,9 @@ const StressFreePlanes = () => {
                     </p>
                   </article>
                   <Image
-                    className=" width_100 "
+                    width={120}
+                    height={120}
+                    className=" mt-3"
                     src={mobile}
                     alt="location_pin"
                   />
@@ -184,17 +199,18 @@ const StressFreePlanes = () => {
               alt="line"
             />
             <div className=" col-12 col-sm-6 col-lg-3 mt-5 w_95 mx-auto   ">
-              <div
-                style={{
-                  backgroundImage: `url(${bg.src})`,
-                  width: "100%",
-                  height: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              >
-                <div className="box d-flex justify-content-between flex-column tranform position-relative overflow-hidden h-100">
+              <div className=" bg_blue h-100  rounded-4">
+                <div
+                  style={{
+                    backgroundImage: `url(${bg.src})`,
+                    width: "100%",
+                    height: "100%",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                  className=" bg-black tranform_2 rounded-4 px-3 py-4 d-flex justify-content-between flex-column  position-relative overflow-hidden h-100"
+                >
                   <Image
                     className=" position-absolute end-0 bottom-0"
                     src={corner_img}
@@ -210,7 +226,9 @@ const StressFreePlanes = () => {
                     </p>
                   </article>
                   <Image
-                    className=" width_100 "
+                    width={120}
+                    height={120}
+                    className=" mt-3"
                     src={location_pin}
                     alt="location_pin"
                   />
@@ -218,17 +236,19 @@ const StressFreePlanes = () => {
               </div>
             </div>
             <div className="col-12 col-sm-6 col-lg-3 mt-5 w_95 mx-auto   ">
-              <div
-                style={{
-                  backgroundImage: `url(${bg.src})`,
-                  width: "100%",
-                  height: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              >
-                <div className="box tranform d-flex flex-column justify-content-between position-relative overflow-hidden h-100">
+              <div className=" bg_blue h-100  rounded-4">
+                <div
+                  style={{
+                    backgroundImage: `url(${bg.src})`,
+                    width: "100%",
+                    height: "100%",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                  className=" bg-black tranform_2 rounded-4 px-3 py-4 d-flex justify-content-between flex-column  position-relative overflow-hidden h-100"
+                >
+                  {" "}
                   <Image
                     className=" position-absolute end-0 bottom-0"
                     src={corner_img}
@@ -245,8 +265,8 @@ const StressFreePlanes = () => {
                   </article>
                   <Image
                     width={120}
-                    height={200}
-                    className=" w_120 "
+                    height={120}
+                    className=" mt-3"
                     src={msg_query}
                     alt="msg_query"
                   />
@@ -254,17 +274,19 @@ const StressFreePlanes = () => {
               </div>
             </div>
             <div className=" col-12 col-sm-6 col-lg-3 mt-5 w_95 mx-auto   ">
-              <div
-                style={{
-                  backgroundImage: `url(${bg.src})`,
-                  width: "100%",
-                  height: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              >
-                <div className="box tranform position-relative d-flex flex-column justify-content-between overflow-hidden h-100">
+              <div className=" bg_blue h-100  rounded-4">
+                <div
+                  style={{
+                    backgroundImage: `url(${bg.src})`,
+                    width: "100%",
+                    height: "100%",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                  className=" bg-black tranform_2 rounded-4 px-3 py-4 d-flex justify-content-between flex-column  position-relative overflow-hidden h-100"
+                >
+                  {" "}
                   <Image
                     className=" position-absolute end-0 bottom-0"
                     src={corner_img}
@@ -281,8 +303,8 @@ const StressFreePlanes = () => {
                   </article>
                   <Image
                     width={120}
-                    height={200}
-                    className=" w_120 "
+                    height={120}
+                    className=" mt-3"
                     src={travling_van}
                     alt="travling_van"
                   />
@@ -290,8 +312,19 @@ const StressFreePlanes = () => {
               </div>
             </div>
             <div className=" col-12 col-sm-6 col-lg-3 mt-5 w_95 mx-auto   ">
-              <div className=" bg_gradient h-100">
-                <div className="box d-flex justify-content-between flex-column tranform position-relative overflow-hidden h-100">
+              <div className=" bg_blue h-100  rounded-4">
+                <div
+                  style={{
+                    backgroundImage: `url(${bg.src})`,
+                    width: "100%",
+                    height: "100%",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                  className=" bg-black tranform_2 rounded-4 px-3 py-4 d-flex justify-content-between flex-column  position-relative overflow-hidden h-100"
+                >
+                  {" "}
                   <Image
                     className=" position-absolute end-0 bottom-0"
                     src={corner_img}
@@ -306,13 +339,7 @@ const StressFreePlanes = () => {
                       with your dear ones.
                     </p>
                   </article>
-                  <Image
-                    width={120}
-                    height={200}
-                    className=" width_100 "
-                    src={mobile}
-                    alt="mobile"
-                  />
+                  <Image width={120} height={120} src={mobile} alt="mobile" />
                 </div>
               </div>
             </div>
@@ -326,13 +353,7 @@ const StressFreePlanes = () => {
               target="_blank"
               className=" text-decoration-none text-black fw-bold font_poppins fs_md"
             >
-              <Image
-                width={50}
-                className=" w_18"
-                src={whatsapp}
-                alt="whatsapp"
-              />{" "}
-              +91 8700923377
+              <Image width={25} src={whatsapp} alt="whatsapp" /> +91 8700923377
             </a>
           </div>
         </div>
