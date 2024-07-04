@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import UserHeader from "./UserHeader";
 import StoryPublish from "./StoryPublish";
 
-const page = () => {
+const UserPage = () => {
   return (
     <>
       {" "}
@@ -22,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default UserPage;

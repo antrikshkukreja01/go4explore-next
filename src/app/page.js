@@ -23,9 +23,9 @@ const page = () => {
   return (
     <>
       {" "}
+      {/* <ProductPage /> */}
       <Home />
       {/* <Upcoming /> */}
-      {/* <ProductPage /> */}
       {/* <Login /> */}
       {/* <BookNow /> */}
       {/* <Terms /> */}

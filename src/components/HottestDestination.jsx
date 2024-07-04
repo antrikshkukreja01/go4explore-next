@@ -11,6 +11,7 @@ import fire from "../assets/img/png/fires_emoji.png";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const HottestDestination = () => {
   const settings = {
@@ -52,92 +53,114 @@ const HottestDestination = () => {
           </h2>
           <div className=" row mt-5 justify-content-center d-none d-sm-flex ">
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform"
-                  src={Destination1}
-                  alt="destination"
-                />
-              </div>
+              <Link
+                className="text-decoration-none"
+                href="/trip/spiti-valley-tour-packages"
+              >
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform"
+                    src={Destination1}
+                    alt="destination"
+                  />
+                </div>
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination2}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="#">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination2}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination3}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="/trip/vietnam">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination3}
+                    alt="destination"
+                  />
+                </div>
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination4}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="#">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination4}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination5}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="#">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination5}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination6}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="/trip/bali">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination6}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination7}
-                  alt="destination"
-                />
-              </div>
+              <Link className="text-decoration-none" href="/trip/thailand">
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination7}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <div className="bg_gradient">
-                <Image
-                  width={200}
-                  height={370}
-                  className=" w-100 rounded-4 tranform "
-                  src={Destination8}
-                  alt="destination"
-                />
-              </div>
+              <Link
+                className="text-decoration-none"
+                href="/trip/kazakhstan-tour-packages"
+              >
+                <div className="bg_gradient">
+                  <Image
+                    width={200}
+                    height={370}
+                    className=" w-100 rounded-4 tranform "
+                    src={Destination8}
+                    alt="destination"
+                  />
+                </div>{" "}
+              </Link>
             </div>
           </div>
           <Slider className=" d-sm-none " {...settings}>

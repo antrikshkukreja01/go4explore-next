@@ -11,7 +11,7 @@ import FaqSpiti from "./FaqSpiti";
 import Reviews from "./Reviews";
 import TravelWithUs from "./TravelWithUs";
 
-const page = () => {
+const LandingPage = () => {
   return (
     <>
       {" "}
@@ -33,4 +33,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LandingPage;

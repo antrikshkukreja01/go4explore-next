@@ -7,7 +7,7 @@ import UpcomingTrips from "./UpcomingTrips";
 import Reviews from "@/components/Reviews";
 import TravelWithUs from "@/components/TravelWithUs";
 
-const page = () => {
+const Upcoming = () => {
   return (
     <>
       {" "}
@@ -24,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Upcoming;

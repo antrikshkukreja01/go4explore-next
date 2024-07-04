@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import img1 from "../assets/img/webp/ProductPhoto.webp";
 import star_emoji from "../assets/img/png/star_emoji.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const GroupTrips = () => {
   const [activeMonth, setActiveMonth] = useState(null);
@@ -97,7 +98,6 @@ const GroupTrips = () => {
                 className={`trip_btn fs_xsm fw-semibold white_space ${
                   activeMonth === month ? "active" : ""
                 }`}
-                href="#"
                 onClick={() => handleMonthClick(month)}
                 style={{
                   backgroundColor:
@@ -115,21 +115,25 @@ const GroupTrips = () => {
             {data.data.packages.map((pkg) => (
               <li className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
-                  <img
-                    className="rounded-4 w-100"
-                    src={pkg.image}
-                    height={280}
-                    alt="img"
-                  />
-                  <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
-                    {pkg.duration}
-                  </p>
+                  <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+                    <div className=" image_280 rounded-4">
+                      <img width={300} height={300} src={pkg.image} alt="img" />
+                    </div>
+                    <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
+                      {pkg.duration}
+                    </p>
+                  </Link>
                 </div>
                 <div className="h_160 flex-column d-flex justify-content-between">
                   <article>
-                    <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                      {pkg.slug}
-                    </h2>
+                    <Link
+                      className="text-decoration-none"
+                      href={`/trips/${encodeURIComponent(pkg.slug)}`}
+                    >
+                      <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black  fw-medium fs_md">
+                        {pkg.slug}
+                      </h2>{" "}
+                    </Link>
                     {pkg.discounted_price ? (
                       <div className="d-flex align-items-center gap-4">
                         <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
@@ -151,12 +155,12 @@ const GroupTrips = () => {
                     )}
                   </article>
                   <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                    <a
+                    <Link
+                      href={`/trips/${encodeURIComponent(pkg.slug)}`}
                       className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                      href="#"
                     >
                       Trip Details
-                    </a>
+                    </Link>
                     <a
                       className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
                       href="#"

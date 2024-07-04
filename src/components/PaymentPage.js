@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 import Payment from "./Payment";
 
-const page = () => {
+const PaymentPage = () => {
   return (
     <>
       {" "}
@@ -21,4 +21,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PaymentPage;

@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import TermsPage from "./TermsPage";
 
-const page = () => {
+const Terms = () => {
   return (
     <>
       {" "}
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Terms;

@@ -15,7 +15,7 @@ import Blogs from "@/components/Blogs";
 import TravelWithUs from "@/components/TravelWithUs";
 import Footer from "@/components/Footer";
 
-const page = () => {
+const Home = () => {
   return (
     <>
       <body className=" position-relative">
@@ -39,45 +39,4 @@ const page = () => {
   );
 };
 
-export default page;
-
-// "use client";
-// import { useEffect, useState } from "react";
-// import { fetchHomeData } from "./Api";
-
-// export default function Home() {
-//   const [data, setData] = useState(null);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     fetchHomeData()
-//       .then((data) => setData(data))
-//       .catch((error) => setError(error));
-//   }, []);
-
-//   if (error) {
-//     return <div>Error: {error.message}</div>;
-//   }
-
-//   if (!data) {
-//     return <div>Loading...</div>;
-//   }
-
-//   return (
-//     <div>
-//       <h1>Travel Packages</h1>
-//       <ul>
-//         {data.data.packages.map((pkg) => (
-//           <li key={pkg.id}>
-//             <h2>{pkg.slug}</h2>
-
-//             <h2>{pkg.title}</h2>
-//             <p>Duration: {pkg.duration}</p>
-//             <p>Price: ₹{pkg.price}</p>
-//             {pkg.discount && <p>Discount: ₹{pkg.discount}</p>}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
+export default Home;

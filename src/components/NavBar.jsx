@@ -41,9 +41,9 @@ const Nav = () => {
     <nav className="py-2 py-sm-4 shadow">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center w-100">
-          <a href="#">
+          <Link href="/">
             <Image width={200} className="logo_width" src={logo} alt="logo" />
-          </a>
+          </Link>
           <div className="d-none d-xl-flex align-items-center gap-3">
             <a
               className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"

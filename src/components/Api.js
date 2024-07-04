@@ -38,3 +38,27 @@ export async function fetchTripsCategoryData(slug) {
     throw new Error(`Failed to fetch data: ${error.message}`);
   }
 }
+//  ==================== Blogs ====================
+
+export async function fetchBlogData(slug) {
+  try {
+    const response = await axios.get(
+      "https://go4explore-api.cyberoze.com/api/blogs/"
+    );
+    return response.data;
+  } catch (error) {
+    throw new Error(`Failed to fetch data: ${error.message}`);
+  }
+}
+//  ==================== Fourms ====================
+
+export async function fetchForumsData() {
+  try {
+    const response = await axios.get(
+      "https://go4explore-api.cyberoze.com/api/forums"
+    );
+    return response.data;
+  } catch (error) {
+    throw new Error(`Failed to fetch data: ${error.message}`);
+  }
+}

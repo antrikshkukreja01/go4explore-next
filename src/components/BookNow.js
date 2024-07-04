@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 import BookNowPage from "./BookNowPage";
 
-const page = () => {
+const BookNow = () => {
   return (
     <>
       {" "}
@@ -21,4 +21,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BookNow;

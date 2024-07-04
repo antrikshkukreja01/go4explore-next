@@ -9,7 +9,7 @@ import ProductPageHeader from "./ProductPageHeader";
 import StartingPrice from "./StartingPrice";
 import RelatedTrips from "./RelatedTrips";
 
-const page = () => {
+const ProductPage = () => {
   return (
     <>
       {" "}
@@ -23,4 +23,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductPage;

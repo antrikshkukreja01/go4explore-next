@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import PassReset from "./PassReset";
 
-const page = () => {
+const PasswordReset = () => {
   return (
     <>
       {" "}
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PasswordReset;

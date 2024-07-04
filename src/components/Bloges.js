@@ -7,7 +7,7 @@ import BlogsSection from "@/components/BlogsSection";
 import RelatedPackages from "./RelatedPackages";
 import RelatedBlogs from "./RelatedBlogs";
 
-const page = () => {
+const Bloges = () => {
   return (
     <>
       {" "}
@@ -24,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Bloges;

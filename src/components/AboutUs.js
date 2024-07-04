@@ -12,7 +12,7 @@ import Ourteam from "./OurTeam";
 import Reels from "./Reels";
 import JoinOurTeam from "./JoinOurTeam";
 
-const page = () => {
+const AboutUs = () => {
   return (
     <>
       {" "}
@@ -34,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutUs;

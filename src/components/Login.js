@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import Login from "./LoginPage";
+import LoginPage from "./LoginPage";
 
-const page = () => {
+const Login = () => {
   return (
     <>
       {" "}
@@ -14,10 +14,10 @@ const page = () => {
           <NavBar />
         </div>
       </body>
-      <Login />
+      <LoginPage />
       <Footer />
     </>
   );
 };
 
-export default page;
+export default Login;

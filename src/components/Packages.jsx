@@ -28,7 +28,7 @@ const Packages = () => {
             <div className="mt-4 mt-lg-0 col-4 col-lg-2  ">
               <a
                 className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
-                href="#"
+                href="trips-category/weekend-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
                   <Image width={90} src={van} alt="van" />
@@ -42,7 +42,7 @@ const Packages = () => {
             <div className="mt-4 mt-lg-0 col-4 col-lg-2  ">
               <a
                 className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
-                href="#"
+                href="trips-category/international-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
                   <Image width={90} src={plane} alt="plane" />
@@ -56,7 +56,7 @@ const Packages = () => {
             <div className="mt-4 mt-lg-0 col-4 col-lg-2  ">
               <a
                 className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
-                href="#"
+                href="trips-category/adventure-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
                   <Image width={90} src={travleing} alt="travleing" />
@@ -69,7 +69,7 @@ const Packages = () => {
             <div className="mt-4 mt-lg-0 col-4 col-lg-2  ">
               <a
                 className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
-                href="#"
+                href="trips-category/honeymoon-packages"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
                   <Image width={90} src={glasses} alt="glasses" />
@@ -83,7 +83,7 @@ const Packages = () => {
             <div className="mt-4 mt-lg-0 col-4 col-lg-2  ">
               <a
                 className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
-                href="#"
+                href="trips-category/corporate-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
                   <Image width={90} src={handshake} alt="handshake" />
