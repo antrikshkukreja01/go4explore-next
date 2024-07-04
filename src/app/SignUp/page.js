@@ -3,10 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Register from "../../components/Register";
 
-import Payment from "./Payment";
-
-const PaymentPage = () => {
+const SignUp = () => {
   return (
     <>
       {" "}
@@ -15,10 +14,10 @@ const PaymentPage = () => {
           <NavBar />
         </div>
       </body>
-      <Payment />
+      <Register />
       <Footer />
     </>
   );
 };
 
-export default PaymentPage;
+export default SignUp;

@@ -45,12 +45,13 @@ const Nav = () => {
             <Image width={200} className="logo_width" src={logo} alt="logo" />
           </Link>
           <div className="d-none d-xl-flex align-items-center gap-3">
-            <a
-              className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-              href="#"
+            <Link
+              href="/Upcoming"
+              className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
             >
               Upcoming Group Trips
-            </a>
+            </Link>
 
             <a
               className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
@@ -65,13 +66,13 @@ const Nav = () => {
             >
               Domestic Trips
             </a>
-
-            <a
-              className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-              href="#"
+            <Link
+              href="/AboutUs"
+              className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
             >
               About Us
-            </a>
+            </Link>
           </div>
           <div className="d-none d-xl-flex">
             <div className="border-right text-decoration-none pe-4 d-flex align-items-center position-relative">

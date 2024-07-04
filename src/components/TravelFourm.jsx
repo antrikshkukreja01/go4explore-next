@@ -209,16 +209,7 @@ const TravelForum = () => {
                   >
                     Answer
                   </button>
-                  {/* {isDivVisible && (
-                    <div>
-                      <textarea
-                        value={answerValue}
-                        onChange={handleAnswerChange}
-                        placeholder="Write your answer here"
-                      ></textarea>
-                      <button type="button">Submit Answer</button>
-                    </div>
-                  )} */}
+
                   <article className="d-flex align-items-center gap-3">
                     <a id="facebook" href="#">
                       <svg
@@ -321,7 +312,7 @@ const TravelForum = () => {
                       </p>
                     </div>
                     <p
-                      className="fw-semibold fs_md text-decoration-none text-black font_poppins mt-3"
+                      className="fw-medium fs_xsm text-decoration-none text-black font_poppins mt-3"
                       dangerouslySetInnerHTML={{ __html: answer.answer }}
                     ></p>
                   </div>

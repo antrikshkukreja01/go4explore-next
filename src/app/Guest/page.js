@@ -3,10 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import GuestAccount from "../../components/GuestAccount";
 
-import BookNowPage from "./BookNowPage";
-
-const BookNow = () => {
+const Guest = () => {
   return (
     <>
       {" "}
@@ -15,10 +14,10 @@ const BookNow = () => {
           <NavBar />
         </div>
       </body>
-      <BookNowPage />
+      <GuestAccount />
       <Footer />
     </>
   );
 };
 
-export default BookNow;
+export default Guest;

@@ -7,6 +7,7 @@ import Youtube from "../assets/img/webp/youtube.webp";
 import Linkdin from "../assets/img/webp/linkdin.webp";
 import Whatsapp from "../assets/img/webp/whatsappicon.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -54,12 +55,12 @@ const Footer = () => {
                 </a>
               </article>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/TravelFourm"
                 >
                   Forums
-                </a>
+                </Link>
               </article>
             </div>
             <div className="  col-6 col-md-3">

@@ -3,9 +3,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import PassReset from "./PassReset";
+import UpcomingTrips from "../../components/UpcomingTrips";
+import Reviews from "@/components/Reviews";
+import TravelWithUs from "@/components/TravelWithUs";
 
-const PasswordReset = () => {
+const Upcoming = () => {
   return (
     <>
       {" "}
@@ -14,10 +16,12 @@ const PasswordReset = () => {
           <NavBar />
         </div>
       </body>
-      <PassReset />
+      <UpcomingTrips />
+      <Reviews />
+      <TravelWithUs />
       <Footer />
     </>
   );
 };
 
-export default PasswordReset;
+export default Upcoming;

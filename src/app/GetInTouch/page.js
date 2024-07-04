@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import Register from "./Register";
+import ContactUs from "../../components/ContactUs";
 
-const SignUp = () => {
+const GetInTouch = () => {
   return (
     <>
       {" "}
@@ -14,10 +14,10 @@ const SignUp = () => {
           <NavBar />
         </div>
       </body>
-      <Register />
+      <ContactUs />
       <Footer />
     </>
   );
 };
 
-export default SignUp;
+export default GetInTouch;

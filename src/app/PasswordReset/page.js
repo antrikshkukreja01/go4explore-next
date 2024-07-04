@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import ContactUs from "./ContactUs";
+import PassReset from "../../components/PassReset";
 
-const GetInTouch = () => {
+const PasswordReset = () => {
   return (
     <>
       {" "}
@@ -14,10 +14,10 @@ const GetInTouch = () => {
           <NavBar />
         </div>
       </body>
-      <ContactUs />
+      <PassReset />
       <Footer />
     </>
   );
 };
 
-export default GetInTouch;
+export default PasswordReset;

@@ -3,9 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import TermsPage from "./TermsPage";
+import UserHeader from "../../components/UserHeader";
+import StoryPublish from "../../components/StoryPublish";
 
-const Terms = () => {
+const UserPage = () => {
   return (
     <>
       {" "}
@@ -14,10 +15,11 @@ const Terms = () => {
           <NavBar />
         </div>
       </body>
-      <TermsPage />
+      <UserHeader />
+      <StoryPublish />
       <Footer />
     </>
   );
 };
 
-export default Terms;
+export default UserPage;

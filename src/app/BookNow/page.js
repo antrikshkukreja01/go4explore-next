@@ -3,11 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import UpcomingTrips from "./UpcomingTrips";
-import Reviews from "@/components/Reviews";
-import TravelWithUs from "@/components/TravelWithUs";
 
-const Upcoming = () => {
+import BookNowPage from "../../components/BookNowPage";
+
+const BookNow = () => {
   return (
     <>
       {" "}
@@ -16,12 +15,10 @@ const Upcoming = () => {
           <NavBar />
         </div>
       </body>
-      <UpcomingTrips />
-      <Reviews />
-      <TravelWithUs />
+      <BookNowPage />
       <Footer />
     </>
   );
 };
 
-export default Upcoming;
+export default BookNow;

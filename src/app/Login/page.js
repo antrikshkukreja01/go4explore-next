@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import PrivacyPage from "./PrivacyPage";
+import LoginPage from "../../components/LoginPage";
 
-const PrivacyPolicy = () => {
+const Login = () => {
   return (
     <>
       {" "}
@@ -14,10 +14,10 @@ const PrivacyPolicy = () => {
           <NavBar />
         </div>
       </body>
-      <PrivacyPage />
+      <LoginPage />
       <Footer />
     </>
   );
 };
 
-export default PrivacyPolicy;
+export default Login;
