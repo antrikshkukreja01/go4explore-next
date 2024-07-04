@@ -8,6 +8,11 @@ import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import Link from "next/link";
+import Reviews from "@/components/Reviews";
+import TravelWithUs from "@/components/TravelWithUs";
+import Image from "next/image";
+import image1 from "@/assets/img/webp/Himachal.webp";
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 
 const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
@@ -384,6 +389,215 @@ const Test = ({ data }) => {
           </div>
         </div>
       </section>
+      <section className=" py-5">
+        <div className="container">
+          <h2 className=" text-center">Spiti Valley Tour FAQs</h2>
+          <div className="row justify-content-center">
+            <div className="col-8">
+              <Accordion id="accordian" defaultExpandedKeys={[]}>
+                <AccordionItem
+                  id="accordian"
+                  className=" w-100 d-flex flex-column  "
+                  title={
+                    <span className="   py-2 px-3 me-2 me-sm-3  d-inline-block font_poppins fw-medium  fs_sm text-center text-black">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                      Lorem ipsum dolor sit
+                    </span>
+                  }
+                >
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black">
+                    {" "}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo perferendis fugit delectus maxime quae itaque
+                    recusandae minima, eos provident quaerat.
+                  </p>
+                </AccordionItem>
+                <AccordionItem
+                  id="accordian"
+                  className=" w-100 d-flex flex-column  "
+                  title={
+                    <span className="   py-2 px-3 me-2 me-sm-3  d-inline-block font_poppins fw-medium  fs_sm text-center text-black">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                      Lorem ipsum dolor sit
+                    </span>
+                  }
+                >
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black">
+                    {" "}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo perferendis fugit delectus maxime quae itaque
+                    recusandae minima, eos provident quaerat.
+                  </p>
+                </AccordionItem>
+                <AccordionItem
+                  id="accordian"
+                  className=" w-100 d-flex flex-column  "
+                  title={
+                    <span className="   py-2 px-3 me-2 me-sm-3  d-inline-block font_poppins fw-medium  fs_sm text-center text-black">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                      Lorem ipsum dolor sit
+                    </span>
+                  }
+                >
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black">
+                    {" "}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo perferendis fugit delectus maxime quae itaque
+                    recusandae minima, eos provident quaerat.
+                  </p>
+                </AccordionItem>
+                <AccordionItem
+                  id="accordian"
+                  className=" w-100 d-flex flex-column  "
+                  title={
+                    <span className="   py-2 px-3 me-2 me-sm-3  d-inline-block font_poppins fw-medium  fs_sm text-center text-black">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                      Lorem ipsum dolor sit
+                    </span>
+                  }
+                >
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black">
+                    {" "}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo perferendis fugit delectus maxime quae itaque
+                    recusandae minima, eos provident quaerat.
+                  </p>
+                </AccordionItem>
+                <AccordionItem
+                  id="accordian"
+                  className=" w-100 d-flex flex-column  "
+                  title={
+                    <span className="   py-2 px-3 me-2 me-sm-3  d-inline-block font_poppins fw-medium  fs_sm text-center text-black">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                      Lorem ipsum dolor sit
+                    </span>
+                  }
+                >
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black">
+                    {" "}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo perferendis fugit delectus maxime quae itaque
+                    recusandae minima, eos provident quaerat.
+                  </p>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Reviews />
+      <section className=" py-5">
+        <div className="container">
+          <h2 className=" text-center">
+            Places to visit in Spiti Valley Tour Packages
+          </h2>
+          <div className="row mt-5">
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+            <div className="col-4 mt-4">
+              <div className="blue_border rounded-4 p-3">
+                <Image
+                  className=" rounded-4 w-100"
+                  height={200}
+                  src={image1}
+                  alt="image1"
+                />
+                <p className=" mb-0 fw-medium fs_sm text-black font_poppins mt-3">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p className=" mb-0 fw-normal fs_xsm text-black font_poppins mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                  vitae!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TravelWithUs />
       <Footer />
     </>
   );

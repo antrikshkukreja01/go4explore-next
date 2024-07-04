@@ -5,9 +5,9 @@ import BackToTop from "../../components/BackToTop";
 import NavBar from "@/components/NavBar";
 
 import Footer from "@/components/Footer";
-import ProductPageHeader from "../../components/ProductPageHeader";
-import StartingPrice from "../../components/StartingPrice";
-import RelatedTrips from "../../components/RelatedTrips";
+import ProductPageHeader from "@/components/ProductPageHeader";
+import StartingPrice from "@/components/StartingPrice";
+import RelatedTrips from "@/components/RelatedTrips";
 
 const ProductPage = () => {
   return (

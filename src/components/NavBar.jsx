@@ -52,13 +52,13 @@ const Nav = () => {
             >
               Upcoming Group Trips
             </Link>
-
-            <a
-              className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-              href="#"
+            <Link
+              href="/trips-category/international-trips"
+              className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
             >
               International Trips
-            </a>
+            </Link>
 
             <a
               className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"

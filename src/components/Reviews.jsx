@@ -59,21 +59,21 @@ const Reviews = () => {
         <div className="row align-items-center">
           <div className="col-xl-6 mt-4">
             <Slider {...sliderSettings}>
-              <a className="w-100" href="#">
+              <a className="w-100">
                 <Image
                   className="h-300 rounded-4 w-100"
                   src={image1}
                   alt="img"
                 />
               </a>
-              <a className="w-100" href="#">
+              <a className="w-100">
                 <Image
                   className="h-300 rounded-4 w-100"
                   src={image1}
                   alt="img"
                 />
               </a>
-              <a className="w-100" href="#">
+              <a className="w-100">
                 <Image
                   className="h-300 rounded-4 w-100"
                   src={image1}

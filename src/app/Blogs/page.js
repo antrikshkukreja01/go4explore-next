@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import BlogsSection from "@/components/BlogsSection";
-import RelatedPackages from "./RelatedPackages";
-import RelatedBlogs from "./RelatedBlogs";
+import RelatedPackages from "@/components/RelatedPackages";
+import RelatedBlogs from "@/components/RelatedBlogs";
 
 const Bloges = () => {
   return (

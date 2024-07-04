@@ -3,13 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import LandingPageHeader from "./LandingPageHeader";
-import HandPicked from "./HandPicked";
-import BestDeals from "./BestDeals";
-import SpitiTripPackages from "./SpitiTripPackages";
-import FaqSpiti from "./FaqSpiti";
-import Reviews from "./Reviews";
-import TravelWithUs from "./TravelWithUs";
+import LandingPageHeader from "@/components/LandingPageHeader";
+import HandPicked from "@/components/HandPicked";
+import BestDeals from "@/components/BestDeals";
+import SpitiTripPackages from "@/components/SpitiTripPackages";
+import FaqSpiti from "@/components/FaqSpiti";
+import Reviews from "@/components/Reviews";
+import TravelWithUs from "@/components/TravelWithUs";
 
 const LandingPage = () => {
   return (

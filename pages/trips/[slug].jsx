@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import "../App.css";
+import Slider from "react-slick";
 import clock from "@/assets/img/webp/clock.webp";
 import location from "@/assets/img/webp/location_pin_product.webp";
 import backpacking from "@/assets/img/webp/black_bag.webp";
@@ -15,6 +16,11 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
+import img_himachal from "@/assets/img/webp/Himachal.webp";
+import img_kashmir from "@/assets/img/webp/Kashmir.webp";
+import img_kerala from "@/assets/img/webp/Kerala.webp";
+import img_uttarakhand from "@/assets/img/webp/Uttarakhand.webp";
+import img_bhutan from "@/assets/img/webp/Bhutan.webp";
 
 const Test = ({ data }) => {
   const [occupancy, setOccupancy] = useState("Double");
@@ -43,6 +49,60 @@ const Test = ({ data }) => {
   if (data.error) return <div>Error loading data</div>;
   if (!data) return <div>Loading...</div>;
 
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: "20px , 40px ",
+        },
+      },
+      {
+        breakpoint: 563,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: "20px , 40px ",
+        },
+      },
+    ],
+  };
   return (
     <>
       <Nav />
@@ -628,6 +688,85 @@ const Test = ({ data }) => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      <section className=" py-5">
+        <div className="container">
+          <h2 className=" mb-4 fw-semibold fs_xl font_poppins text-black text-center">
+            Related Trips For You
+          </h2>
+          <Slider {...settings}>
+            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+              <Image
+                height={300}
+                className=" rounded-4  w-100 "
+                src={img_himachal}
+                alt="img_location"
+              />
+              <p className=" mb-0 fw-medium fs_md text-black font_poppins text-center mt-3">
+                Himachal Pradesh
+              </p>
+              <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
+                Starting Price ₹5000
+              </p>
+            </div>
+            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+              <Image
+                height={300}
+                className=" rounded-4  w-100 "
+                src={img_uttarakhand}
+                alt="img_location"
+              />
+              <p className=" mb-0 fw-medium fs_md text-black font_poppins text-center mt-3">
+                Uttarakhand
+              </p>
+              <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
+                Starting Price ₹5000
+              </p>
+            </div>
+            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+              <Image
+                height={300}
+                className=" rounded-4  w-100 "
+                src={img_kashmir}
+                alt="img_location"
+              />
+              <p className=" mb-0 fw-medium fs_md text-black font_poppins text-center mt-3">
+                Kashmir
+              </p>
+              <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
+                Starting Price ₹5000
+              </p>
+            </div>
+            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+              <Image
+                height={300}
+                className=" rounded-4  w-100 "
+                src={img_bhutan}
+                alt="img_location"
+              />
+              <p className=" mb-0 fw-medium fs_md text-black font_poppins text-center mt-3">
+                Bhutan
+              </p>
+              <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
+                Starting Price ₹5000
+              </p>
+            </div>
+            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+              <Image
+                height={300}
+                className=" rounded-4  w-100 "
+                src={img_kerala}
+                alt="img_location"
+              />
+              <p className=" mb-0 fw-medium fs_md text-black font_poppins text-center mt-3">
+                Kerala
+              </p>
+              <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
+                Starting Price ₹5000
+              </p>
+            </div>
+          </Slider>
         </div>
       </section>
       <Footer />
