@@ -131,7 +131,7 @@ const GroupTrips = () => {
                       href={`/trips/${encodeURIComponent(pkg.slug)}`}
                     >
                       <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black  fw-medium fs_md">
-                        {pkg.slug}
+                        {pkg.name}
                       </h2>{" "}
                     </Link>
                     {pkg.discounted_price ? (

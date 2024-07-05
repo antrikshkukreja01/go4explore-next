@@ -693,6 +693,9 @@ h1 {
 }
 /* ---- Upcoming Trips ---- */
 
+ul {
+  list-style-type: disc !important;
+}
 .trip_btn {
   border: 1px solid black;
   text-decoration: none;
@@ -949,12 +952,10 @@ h1 {
   width: 100%;
   height: 100%;
 }
-.background_2 {
-  background: url(../assets/img/webp/grid6.webp) no-repeat top;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
+.bottom-20 {
+  bottom: -61.2%;
 }
+
 .bg_founder {
   background: url(../assets/img/webp/founderbg.webp);
   background-size: cover;

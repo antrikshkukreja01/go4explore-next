@@ -349,7 +349,7 @@ const StressFreePlanes = () => {
               Call us or drop Hi on Whatsapp at
             </p>
             <a
-              href="https://web.whatsapp.com/"
+              href="https://api.whatsapp.com/send?phone=918700923377"
               target="_blank"
               className=" text-decoration-none text-black fw-bold font_poppins fs_md"
             >

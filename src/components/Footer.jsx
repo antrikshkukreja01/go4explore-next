@@ -176,32 +176,32 @@ const Footer = () => {
                 Quick Links
               </p>
 
-              <article>
-                <a
-                  className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
-                >
-                  Privacy Policy
-                </a>
-              </article>
+              <Link
+                href="/Privacy"
+                className=" fw-normal fs_xsm text-black font_poppins
+                text-decoration-none"
+              >
+                {" "}
+                Privacy Policy
+              </Link>
 
-              <article>
-                <a
-                  className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
-                >
-                  Terms & Conditions
-                </a>
-              </article>
+              <Link
+                className=" fw-normal fs_xsm text-black font_poppins
+                text-decoration-none"
+                href="/Terms"
+              >
+                {" "}
+                Terms & Conditions
+              </Link>
 
-              <article>
-                <a
-                  className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
-                >
-                  Cancellation & Refund Policy
-                </a>
-              </article>
+              <Link
+                className=" fw-normal fs_xsm text-black font_poppins
+                text-decoration-none"
+                href="/Cancellation"
+              >
+                {" "}
+                Cancellation & Refund Policy
+              </Link>
             </div>
           </div>
           <div className=" row justify-content-md-end pt-md-5">

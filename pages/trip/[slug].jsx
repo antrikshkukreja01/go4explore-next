@@ -113,7 +113,7 @@ const Test = ({ data }) => {
                 height={500}
                 alt={offer.title}
               />
-              <h1 className=" text-white fw-bold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
+              <h1 className=" text-white w-100 text-center fw-bold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
                 {offer.title}
               </h1>
             </header>
@@ -173,7 +173,7 @@ const Test = ({ data }) => {
                     <div className="h_160 flex-column d-flex justify-content-between">
                       <article>
                         <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                          {pkg.slug}
+                          {pkg.name}
                         </h2>
                         {pkg.discounted_price ? (
                           <div className="d-flex align-items-center gap-4">
@@ -279,7 +279,7 @@ const Test = ({ data }) => {
                   <div className="h_160 flex-column d-flex justify-content-between">
                     <article>
                       <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                        {pkg.slug}
+                        {pkg.name}
                       </h2>
                       {pkg.discounted_price ? (
                         <div className="d-flex align-items-center gap-4">
@@ -346,7 +346,7 @@ const Test = ({ data }) => {
                   <div className="h_160 flex-column d-flex justify-content-between">
                     <article>
                       <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                        {pkg.slug}
+                        {pkg.name}
                       </h2>
                       {pkg.discounted_price ? (
                         <div className="d-flex align-items-center gap-4">

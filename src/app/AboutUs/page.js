@@ -27,8 +27,8 @@ const AboutUs = () => {
       <Roadmap />
       <Founder />
       <Ourteam />
-      {/* <Reels /> */}
-      {/* <JoinOurTeam /> */}
+      <Reels />
+      <JoinOurTeam />
       <Footer />
     </>
   );

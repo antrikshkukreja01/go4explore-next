@@ -1,14 +1,25 @@
 import React from "react";
 
 import img_1 from "../assets/img/png/party_img.png";
+import bg_img from "../assets/img/webp/captionbg.webp";
+import bg from "../assets/img/webp/grid6.webp";
 import caption_img from "../assets/img/webp/tripcaptions.webp";
 import Image from "next/image";
 
 const JoinOurTeam = () => {
   return (
     <>
-      <section className="py-4 py-sm-5 ">
-        <div className="bg_img_captions">
+      <section className="pt-4 pt-sm-5 ">
+        <div
+          style={{
+            backgroundImage: `url(${bg_img.src})`,
+            width: "100%",
+            height: "100%",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
           <div className=" container">
             <div className=" row align-items-center justify-content-center h_500 ">
               <div className=" col-sm-4">
@@ -24,20 +35,36 @@ const JoinOurTeam = () => {
                 </p>
               </div>
 
-              <div className=" d-flex align-items-center col-sm-8">
-                <Image
-                  className=" w-100 h_400"
-                  src={caption_img}
-                  alt="caption_img"
-                />
-                <p className=" mb-0 fs_xxl text-white font_poppins fw-bold">
-                  50+ on-ground & coolest Trip Captains
-                </p>
+              <div className="  col-sm-8">
+                <div className="row align-items-center justify-content-end position-relative">
+                  <div className="col-6 position-absolute start-0 bottom-20">
+                    <Image
+                      className=" w-100 h_400"
+                      src={caption_img}
+                      alt="caption_img"
+                    />
+                  </div>
+                  <div className="col-6">
+                    {" "}
+                    <p className=" mb-0 fs_3xl text-white font_poppins fw-bold">
+                      50+ on-ground & coolest Trip Captains
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="background_2">
+        <div
+          style={{
+            backgroundImage: `url(${bg.src})`,
+            width: "100%",
+            height: "600px",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
           <div class="with-blur-backdrop text-center d-flex flex-column justify-content-end">
             <p className=" fw-semibold fs_sm font_poppins text-white mb-3">
               Here at <span className=" clr_yellow">Go4Explore</span>, we

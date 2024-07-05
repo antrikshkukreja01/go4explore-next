@@ -9,6 +9,7 @@ import img_uttarakhand from "../assets/img/webp/Uttarakhand.webp";
 import img_bhutan from "../assets/img/webp/Bhutan.webp";
 import heart from "../assets/img/png/love_emoji.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Bali = () => {
   var settings = {
@@ -92,16 +93,37 @@ const Bali = () => {
       <section id="BaliSlider" className=" py-4 py-sm-5">
         <div className="container">
           <Slider {...settings}>
-            <Image className=" rounded-4   h_baliimg" src={bali} alt="bali" />
-            <Image className=" rounded-4  h_baliimg" src={bali} alt="bali" />
-            <Image className=" rounded-4  h_baliimg" src={bali} alt="bali" />
+            <Link href="/trip/bali">
+              <Image
+                className=" rounded-4  w-100  h_baliimg"
+                src={bali}
+                alt="bali"
+              />
+            </Link>
+            <Link href="/trip/bali">
+              <Image
+                className=" rounded-4  w-100  h_baliimg"
+                src={bali}
+                alt="bali"
+              />
+            </Link>
+            <Link href="/trip/bali">
+              <Image
+                className=" rounded-4  w-100  h_baliimg"
+                src={bali}
+                alt="bali"
+              />
+            </Link>
           </Slider>
           <h2 className=" font_poppins my-4 my-sm-5 fs_xl  fw-semibold text-capitalize text-black text-center">
             Find Your Perfect Escape
             <Image width={30} className="  ms-2" src={heart} alt="heart" />
           </h2>
           <Slider {...settings2}>
-            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+            <Link
+              href="/trip/himachal-pradesh-tour-packages"
+              className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
+            >
               <Image
                 className=" rounded-4  h_300 w-100 "
                 src={img_himachal}
@@ -113,8 +135,11 @@ const Bali = () => {
               <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
                 Starting Price ₹5000
               </p>
-            </div>
-            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+            </Link>
+            <Link
+              href="#"
+              className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
+            >
               <Image
                 className=" rounded-4  h_300 w-100 "
                 src={img_uttarakhand}
@@ -126,8 +151,11 @@ const Bali = () => {
               <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
                 Starting Price ₹5000
               </p>
-            </div>
-            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+            </Link>
+            <Link
+              href="/trip/kashmir   "
+              className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
+            >
               <Image
                 className=" rounded-4  h_300 w-100 "
                 src={img_kashmir}
@@ -139,8 +167,11 @@ const Bali = () => {
               <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
                 Starting Price ₹5000
               </p>
-            </div>
-            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+            </Link>
+            <Link
+              href="#"
+              className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
+            >
               <Image
                 className=" rounded-4  h_300 w-100 "
                 src={img_bhutan}
@@ -152,8 +183,11 @@ const Bali = () => {
               <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
                 Starting Price ₹5000
               </p>
-            </div>
-            <div className=" d-flex flex-column px-2  align-items-center mx-auto">
+            </Link>
+            <Link
+              href="/trip/kerala   "
+              className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
+            >
               <Image
                 className=" rounded-4  h_300 w-100 "
                 src={img_kerala}
@@ -165,7 +199,7 @@ const Bali = () => {
               <p className=" mb-0 fw-medium fs_xsm clr_gray font_poppins text-center ">
                 Starting Price ₹5000
               </p>
-            </div>
+            </Link>
           </Slider>
         </div>
       </section>

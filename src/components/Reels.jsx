@@ -17,7 +17,7 @@ const Reels = () => {
                 target="_blank"
                 href="https://www.instagram.com/reel/C35JanXpEXA/?igsh=MWxseW11d2hsa3dobQ%3D%3D"
               >
-                <div className="bg_gradient">
+                <div className="bg_gradient h_500">
                   <div className=" position-relative">
                     <Image
                       height={500}
@@ -26,7 +26,7 @@ const Reels = () => {
                       alt="Reel"
                     />{" "}
                     <span className=" position-absolute start-50 top-50 d-flex justify-content-center translate-middle ">
-                      <Image width={80} src={play_btn} alt="play_btn" />
+                      <Image width={60} src={play_btn} alt="play_btn" />
                     </span>
                   </div>
                 </div>
@@ -37,15 +37,16 @@ const Reels = () => {
                 target="_blank"
                 href="https://www.instagram.com/reel/C44_Js0pPf1/?igsh=eXdhN2N6ZDJ2bmYy"
               >
-                <div className="bg_gradient">
+                <div className="bg_gradient h_500">
                   <div className=" position-relative">
                     <Image
                       className=" w-100 rounded-4 tranform"
                       src={Reel2}
+                      height={500}
                       alt="Reel"
                     />{" "}
                     <span className=" position-absolute start-50 top-50 d-flex justify-content-center translate-middle ">
-                      <Image width={80} src={play_btn} alt="play_btn" />
+                      <Image width={60} src={play_btn} alt="play_btn" />
                     </span>
                   </div>
                 </div>
@@ -56,15 +57,16 @@ const Reels = () => {
                 target="_blank"
                 href="https://www.instagram.com/reel/C0EpAIAJkQ-/?igsh=Y3k5Z3dmZHd2ZW51"
               >
-                <div className="bg_gradient">
+                <div className="bg_gradient h_500">
                   <div className=" position-relative">
                     <Image
                       className=" w-100 rounded-4 tranform"
                       src={Reel3}
+                      height={500}
                       alt="Reel"
                     />{" "}
                     <span className=" position-absolute start-50 top-50 d-flex justify-content-center translate-middle ">
-                      <Image width={80} src={play_btn} alt="play_btn" />
+                      <Image width={60} src={play_btn} alt="play_btn" />
                     </span>
                   </div>
                 </div>
@@ -75,15 +77,16 @@ const Reels = () => {
                 target="_blank"
                 href="https://www.instagram.com/reel/C6MOJe9JS8E/?igsh=Z3dndXlnd2o2Z3Nt"
               >
-                <div className="bg_gradient">
+                <div className="bg_gradient h_500">
                   <div className=" position-relative">
                     <Image
                       className=" w-100 rounded-4 tranform"
                       src={Reel4}
+                      height={500}
                       alt="Reel"
                     />{" "}
                     <span className=" position-absolute start-50 top-50 d-flex justify-content-center translate-middle ">
-                      <Image width={80} src={play_btn} alt="play_btn" />
+                      <Image width={60} src={play_btn} alt="play_btn" />
                     </span>
                   </div>
                 </div>
