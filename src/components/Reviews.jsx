@@ -126,7 +126,6 @@ const Reviews = () => {
                             <a
                               target="_blank"
                               className="mb-3 me-3 fw-bold fs_xsm clr_blue position-absolute bottom-0 end-0"
-                              href="https://maps.app.goo.gl/wvRsADsVnuQaqR7q7"
                             >
                               Read More
                             </a>
@@ -176,7 +175,6 @@ const Reviews = () => {
                             <a
                               target="_blank"
                               className="mb-3 me-3 fw-bold fs_xsm clr_blue position-absolute bottom-0 end-0"
-                              href="https://maps.app.goo.gl/wvRsADsVnuQaqR7q7"
                             >
                               Read More
                             </a>

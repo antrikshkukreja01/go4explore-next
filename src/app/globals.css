@@ -955,6 +955,9 @@ ul {
 .bottom-20 {
   bottom: -61.2%;
 }
+#trippage li {
+  list-style-type: none !important;
+}
 
 .bg_founder {
   background: url(../assets/img/webp/founderbg.webp);

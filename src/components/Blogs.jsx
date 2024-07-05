@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import heart_eye from "../assets/img/png/love_emoji.png";
 import Image from "next/image";
 import { fetchBlogData } from "./Api";
+import Link from "next/link";
 
 const Blogs = () => {
   const [data, setData] = useState(null);
@@ -75,28 +76,30 @@ const Blogs = () => {
               <div className="row justify-content-center d-none d-md-flex">
                 {otherBlogs.map((blog) => (
                   <div key={blog.id} className="mt-4 col-md-6 col-xl-12">
-                    <div className="bg_gradient">
-                      <div className="row box_blog_small align-items-center w-100">
-                        <div className="col-xl-5 ps-0">
-                          <img
-                            className="rounded-4 w-100"
-                            height={130}
-                            src={blog.image}
-                            alt="blog_img"
-                          />
-                        </div>
-                        <div className="col-xl-7">
-                          <article className="mt-4 mt-xl-0">
-                            <p className="mb-2 fs_sm clr_blue font_poppins fw-semibold">
-                              {blog.name}
-                            </p>
-                            <p className="fs_xsm text-black mt-1 fw-medium font_poppins mb-0">
-                              Published on {formatDate(blog.created_at)}
-                            </p>
-                          </article>
+                    <Link href={`/blogs/${encodeURIComponent(blog.slug)}`}>
+                      <div className="bg_gradient">
+                        <div className="row box_blog_small align-items-center w-100">
+                          <div className="col-xl-5 ps-0">
+                            <img
+                              className="rounded-4 w-100"
+                              height={130}
+                              src={blog.image}
+                              alt="blog_img"
+                            />
+                          </div>
+                          <div className="col-xl-7">
+                            <article className="mt-4 mt-xl-0">
+                              <p className="mb-2 fs_sm clr_blue font_poppins fw-semibold">
+                                {blog.name}
+                              </p>
+                              <p className="fs_xsm text-black mt-1 fw-medium font_poppins mb-0">
+                                Published on {formatDate(blog.created_at)}
+                              </p>
+                            </article>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>

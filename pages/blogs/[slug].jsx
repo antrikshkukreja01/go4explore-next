@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
-import Slider from "react-slick";
+// import blogimg from "../assets/img/webp/blogimg.webp";
 import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
@@ -30,107 +30,126 @@ const Test = ({ slug }) => {
 
   if (error) return <div>Error loading data</div>;
   if (!data) return <div>Loading...</div>;
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "20px , 40px ",
-        },
-      },
-    ],
-  };
+
   return (
     <>
       <Nav />
 
       <section className=" py-5">
         <div className=" container">
-          <Slider {...settings}>
-            {data.data.packages.map((pkg) => (
-              <div className="px-3" key={pkg.id}>
-                <div className="position-relative mb-4">
+          {data.data.map((blogs) => (
+            <div>
+              <p className=" mt-4 mb-4 text-center text-black font_poppins fw-semibold fs_xl">
+                {blogs.name}
+              </p>
+              <img
+                height={500}
+                className=" w-100  rounded-4"
+                src={blogs.image}
+                alt={blogs.alt_tag}
+              />
+              <div className=" row position-relative justify-content-between pb-5">
+                <div className=" pt-5 col-lg-8  ">
+                  <p className=" mb-0 fw-medium fs_xsm font_poppins text-black">
+                    {blogs.created_at}
+                  </p>
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black mt-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Expedita laudantium reprehenderit, in, dicta error
+                    dignissimos cupiditate similique amet, ipsum pariatur
+                    inventore sequi voluptatem! Magnam incidunt velit est vel
+                    non, enim dolorem quasi quas modi dicta inventore amet ad
+                    accusantium ullam asperiores repudiandae quibusdam beatae
+                    autem sequi perspiciatis nulla voluptates expedita ducimus
+                    corrupti? Labore iusto eos architecto excepturi est,
+                    laudantium blanditiis veritatis modi officia. Aperiam,
+                    quaerat fugit nam cum modi dicta eligendi explicabo laborum
+                    quam, maiores saepe soluta ipsa. Optio quasi iste, dolores
+                    quisquam explicabo enim cupiditate porro reiciendis expedita
+                    soluta iure, eos voluptates nam quod dolorem quo recusandae,
+                    quidem eius aut aspernatur! Nulla doloribus voluptatibus in
+                    cum quae vero et, asperiores eos recusandae possimus optio
+                    ducimus pariatur corrupti alias! Beatae mollitia autem
+                    veritatis ea, deleniti unde ipsa dolores alias sapiente
+                    architecto distinctio assumenda vel modi reiciendis, ut
+                    quasi aperiam doloremque dicta culpa vero. Tempore, dolore
+                    eius provident error alias ratione incidunt dignissimos
+                    tenetur consequuntur nemo dolorum asperiores sapiente, harum
+                    aut a quasi sint illum quaerat soluta ab rem saepe! Saepe
+                    consequatur repudiandae rerum provident iste impedit
+                    molestiae dolor repellendus consequuntur, veritatis nemo
+                    alias voluptatum, quos culpa dolorum, et ipsa dicta?
+                    Quisquam illum nisi maiores libero cum quaerat pariatur
+                    repellendus vel.
+                  </p>
                   <img
-                    className="rounded-4 w-100"
-                    src={pkg.image}
-                    height={280}
-                    alt="img"
+                    className=" w-100  rounded-4 mt-5"
+                    src={blogs.image}
+                    alt="img2"
                   />
-                  <p className=" bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
-                    {pkg.duration}
+                  <p className=" mt-4 mb-2 text-black font_poppins fw-semibold fs_lg">
+                    A day in Kaza: best spots for cafe hopping in Spiti Valley
+                    trip
+                  </p>
+                  <p className=" mb-0 fw-medium fs_xsm font_poppins text-black">
+                    Published On 09 May 2024
+                  </p>
+                  <p className=" mb-0 fw-normal fs_xsm font_poppins text-black mt-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Expedita laudantium reprehenderit, in, dicta error
+                    dignissimos cupiditate similique amet, ipsum pariatur
+                    inventore sequi voluptatem! Magnam incidunt velit est vel
+                    non, enim dolorem quasi quas modi dicta inventore amet ad
+                    accusantium ullam asperiores repudiandae quibusdam beatae
+                    autem sequi perspiciatis nulla voluptates expedita ducimus
+                    corrupti? Labore iusto eos architecto excepturi est,
+                    laudantium blanditiis veritatis modi officia. Aperiam,
+                    quaerat fugit nam cum modi dicta eligendi explicabo laborum
+                    quam, maiores saepe soluta ipsa. Optio quasi iste, dolores
+                    quisquam explicabo enim cupiditate porro reiciendis expedita
+                    soluta iure, eos voluptates nam quod dolorem quo recusandae,
+                    quidem eius aut aspernatur! Nulla doloribus voluptatibus in
+                    cum quae vero et, asperiores eos recusandae possimus optio
+                    ducimus pariatur corrupti alias! Beatae mollitia autem
+                    veritatis ea, deleniti unde ipsa dolores alias sapiente
+                    architecto distinctio assumenda vel modi reiciendis, ut
+                    quasi aperiam doloremque dicta culpa vero. Tempore, dolore
+                    eius provident error alias ratione incidunt dignissimos
+                    tenetur consequuntur nemo dolorum asperiores sapiente, harum
+                    aut a quasi sint illum quaerat soluta ab rem saepe! Saepe
+                    consequatur repudiandae rerum provident iste impedit
+                    molestiae dolor repellendus consequuntur, veritatis nemo
+                    alias voluptatum, quos culpa dolorum, et ipsa dicta?
+                    Quisquam illum nisi maiores libero cum quaerat pariatur
+                    repellendus vel.
                   </p>
                 </div>
-                <div className="h_160 flex-column d-flex justify-content-between">
-                  <article>
-                    <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                      {pkg.slug}
-                    </h2>
-                    {pkg.discounted_price ? (
-                      <div className="d-flex align-items-center gap-4">
-                        <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                          ₹{pkg.price}
-                        </p>
-                        <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                          ₹{pkg.discounted_price} per person
-                        </p>
-                      </div>
-                    ) : (
-                      <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                        ₹{pkg.price} per person
+                <div className=" col-lg-4 ps-5 ">
+                  <div className=" top-10 position-sticky pt-5">
+                    <div className=" border-3 border rounded-3 p-4 mb-4 ">
+                      <p className=" mb-2 font_poppins fw-semibold fs_md text-black text-center">
+                        Have Doubts? Talk To Our Travel Experts!
                       </p>
-                    )}
-                    {pkg.discount && (
-                      <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                        Discount: ₹{pkg.discount}
+                      <p className=" mb-0 font_poppins fw-medium fs-13 text-black text-center">
+                        Allow Us to Call You Back
                       </p>
-                    )}
-                  </article>
-                  <div className="d-flex flex-column flex-sm-row align-items-center flex-xl-column flex-xxl-row gap-2 mt-3">
-                    <Link
-                      href={`/trips/${encodeURIComponent(pkg.slug)}`}
-                      className="tripDetail_btn white_space fs_xsm fw-medium text-center w-100 text-decoration-none"
-                    >
-                      Trip Details
-                    </Link>
-                    <a
-                      className="white_space callback_btn fs_xsm fw-medium w-100 text-center text-decoration-none"
-                      href="#"
-                    >
-                      Request Callback
-                    </a>
+                      <a
+                        className="white_space callback_btn fs_xsm fw-medium w-100 rounded-5 d-inline-block mt-3 text-center text-decoration-none"
+                        href="#"
+                      >
+                        Request Callback
+                      </a>
+                    </div>
+                    {/* <Image
+                      className="w-100 h_400 rounded-4   mb-5 "
+                      src={blogimg}
+                      alt="blogimg"
+                    /> */}
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />
