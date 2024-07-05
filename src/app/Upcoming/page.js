@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import UpcomingTrips from "../../components/UpcomingTrips";
+import UpcomingTrips from "@/components/UpcomingTrips";
 import Reviews from "@/components/Reviews";
 import TravelWithUs from "@/components/TravelWithUs";
 

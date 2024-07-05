@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-import Payment from "../../components/Payment";
+import Payment from "@/components/Payment";
 
 const PaymentPage = () => {
   return (

@@ -3,14 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import HeaderAboutUs from "../../components/HeaderAboutUs";
-import AboutUsSection from "../../components/AboutSection";
-import WhatWeOffer from "../../components/WhatWeOffer";
-import Roadmap from "../../components/RoadMap";
-import Founder from "../../components/Founder";
-import Ourteam from "../../components/OurTeam";
-import Reels from "../../components/Reels";
-import JoinOurTeam from "../../components/JoinOurTeam";
+import HeaderAboutUs from "@/components/HeaderAboutUs";
+import AboutUsSection from "@/components/AboutSection";
+import WhatWeOffer from "@/components/WhatWeOffer";
+import Roadmap from "@/components/RoadMap";
+import Founder from "@/components/Founder";
+import Ourteam from "@/components/OurTeam";
+import Reels from "@/components/Reels";
+import JoinOurTeam from "@/components/JoinOurTeam";
 
 const AboutUs = () => {
   return (

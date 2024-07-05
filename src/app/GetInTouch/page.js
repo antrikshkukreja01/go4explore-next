@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import ContactUs from "../../components/ContactUs";
+import ContactUs from "@/components/ContactUs";
 
 const GetInTouch = () => {
   return (
