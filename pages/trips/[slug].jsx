@@ -396,7 +396,7 @@ const Test = ({ data }) => {
                   </p>
                   <p
                     className=" fs_xsm fw-normal text-black font_poppins mb-0 mt-4"
-                    dangerouslySetInnerHTML={{ __html: data.description }}
+                    dangerouslySetInnerHTML={{ __html: data.data.description }}
                   ></p>
                 </div>
                 <div id="Itinerary" className=" p-4  mt-4">
@@ -435,7 +435,7 @@ const Test = ({ data }) => {
                     <span className=" text-success fs-4">&#10003;</span>
                     <p
                       className=" fs_xsm fw-normal text-black font_poppins mb-0 "
-                      dangerouslySetInnerHTML={{ __html: data.inclusions }}
+                      dangerouslySetInnerHTML={{ __html: data.data.inclusions }}
                     ></p>
                   </article>
                 </div>
@@ -448,7 +448,7 @@ const Test = ({ data }) => {
                     <span className="  text-danger fs-4">&#10008;</span>
                     <p
                       className=" fs_xsm fw-normal text-black font_poppins mb-0 "
-                      dangerouslySetInnerHTML={{ __html: data.exclusions }}
+                      dangerouslySetInnerHTML={{ __html: data.data.exclusions }}
                     ></p>
                   </article>
                 </div>
@@ -462,7 +462,7 @@ const Test = ({ data }) => {
                     <p
                       className=" fs_xsm fw-normal text-black font_poppins mb-0 "
                       dangerouslySetInnerHTML={{
-                        __html: data.things_to_pack,
+                        __html: data.data.things_to_pack,
                       }}
                     ></p>
                   </article>
@@ -529,20 +529,20 @@ const Test = ({ data }) => {
                       {data.data.discounted_price ? (
                         <div className="d-flex align-items-center gap-4">
                           <p className="mb-0 fw-semibold fs_xxl font_poppins text-black">
-                            ₹{data.discounted_price}
+                            ₹{data.data.discounted_price}
                           </p>
                           <p className="mb-0 fw-medium fs_md font_poppins clr_gray text-decoration-line-through">
-                            ₹{data.price}
+                            ₹{data.data.price}
                           </p>
                         </div>
                       ) : (
                         <p className="mb-0 fw-semibold fs_xxl font_poppins text-black">
-                          ₹{data.price}
+                          ₹{data.data.price}
                         </p>
                       )}
                       {data.data.discount && (
                         <p className="mb-0 fw-medium fs_md font_poppins clr_gray text-decoration-line-through">
-                          ₹{data.discount}
+                          ₹{data.data.discount}
                         </p>
                       )}
                     </article>
