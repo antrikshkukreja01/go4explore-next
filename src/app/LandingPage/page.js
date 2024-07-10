@@ -21,12 +21,12 @@ const LandingPage = () => {
         </div>
       </body>
       <LandingPageHeader />
-      <HandPicked />
+      {/* <HandPicked /> */}
       <BestDeals />
-      <SpitiTripPackages />
-      <FaqSpiti />
+      {/* <SpitiTripPackages /> */}
+      {/* <FaqSpiti /> */}
       <Reviews />
-      <SpitiTripPackages />
+      {/* <SpitiTripPackages /> */}
       <TravelWithUs />
       <Footer />
     </>
