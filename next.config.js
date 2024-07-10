@@ -5,6 +5,9 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["d2qa7a8q0vuocm.cloudfront.net", "localhost"],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.(mp4|webm|ogg|swf|ogv)$/,

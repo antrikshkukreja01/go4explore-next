@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { fetchHomeData } from "./Api";
 import Slider from "react-slick";
-import img1 from "../assets/img/webp/ProductPhoto.webp";
 import star_emoji from "../assets/img/png/star_emoji.png";
 import Image from "next/image";
 import Link from "next/link";

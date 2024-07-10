@@ -12,8 +12,6 @@ import Link from "next/link";
 import Reviews from "@/components/Reviews";
 import TravelWithUs from "@/components/TravelWithUs";
 import Image from "next/image";
-import image1 from "@/assets/img/webp/Himachal.webp";
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
 
 const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
@@ -38,21 +36,31 @@ const Test = ({ data }) => {
         {packages.map((pkg) => (
           <div key={pkg.id} className="px-3">
             <div className="position-relative mb-4">
-              <img
-                className="rounded-4 w-100"
-                src={pkg.image}
-                height={370}
-                alt="img"
-              />
+              <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+                <Image
+                  className=" w-100 rounded-4 "
+                  src={pkg.image}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "350px" }} // optional
+                  alt="img"
+                />
+              </Link>
               <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
                 {pkg.duration}
               </p>
             </div>
             <div className="h_160 flex-column d-flex justify-content-between">
               <article>
-                <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                  {pkg.name}
-                </h2>
+                <Link
+                  className=" text-decoration-none"
+                  href={`/trips/${encodeURIComponent(pkg.slug)}`}
+                >
+                  <p className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
+                    {pkg.name}
+                  </p>
+                </Link>
                 {pkg.discounted_price ? (
                   <div className="d-flex align-items-center gap-4">
                     <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
@@ -95,21 +103,26 @@ const Test = ({ data }) => {
       packages.map((pkg) => (
         <li className="px-3" key={pkg.id}>
           <div className="position-relative mb-4">
-            <img
-              className="rounded-4 w-100"
-              src={pkg.image}
-              height={370}
-              alt="img"
-            />
+            <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+              <Image
+                className=" w-100 rounded-4 "
+                src={pkg.image}
+                height={370}
+                width={0}
+                alt="img"
+              />
+            </Link>
             <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
               {pkg.duration}
             </p>
           </div>
           <div className="h_160 flex-column d-flex justify-content-between">
             <article>
-              <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                {pkg.name}
-              </h2>
+              <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+                <p className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
+                  {pkg.name}
+                </p>
+              </Link>
               {pkg.discounted_price ? (
                 <div className="d-flex align-items-center gap-4">
                   <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
@@ -158,10 +171,13 @@ const Test = ({ data }) => {
         <div className="container">
           {data.data.offer.map((offer) => (
             <header key={offer.id} className="position-relative">
-              <img
-                className="w-100 rounded-4"
+              <Image
+                className=" rounded-4"
                 src={offer.uri}
-                height={500}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "500px" }} // optional
                 alt={offer.title}
               />
               <h1 className="text-white w-100 text-center fw-bold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">

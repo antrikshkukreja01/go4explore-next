@@ -76,7 +76,10 @@ const Blogs = () => {
               <div className="row justify-content-center d-none d-md-flex">
                 {otherBlogs.map((blog) => (
                   <div key={blog.id} className="mt-4 col-md-6 col-xl-12">
-                    <Link href={`/blogs/${encodeURIComponent(blog.slug)}`}>
+                    <Link
+                      className=" text-decoration-none"
+                      href={`/blogs/${encodeURIComponent(blog.slug)}`}
+                    >
                       <div className="bg_gradient">
                         <div className="row box_blog_small align-items-center w-100">
                           <div className="col-xl-5 ps-0">

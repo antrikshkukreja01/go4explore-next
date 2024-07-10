@@ -4,7 +4,7 @@ import location from "../assets/img/webp/navigation_pin.webp";
 import search from "../assets/img/webp/search.webp";
 import Image from "next/image";
 import Slider from "react-slick";
-import HeaderVideo from "../assets/HomepageVideo2.mp4";
+import HeaderVideo from "../assets/HomepageVideo.mp4";
 
 const Header = () => {
   const settings = {

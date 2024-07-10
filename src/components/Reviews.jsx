@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { fetchTripsData } from "./Api";
+import { fetchReviewsData } from "./Api";
 import Slider from "react-slick";
 import image1 from "../assets/img/webp/ProductPhoto.webp";
 import smiling from "../assets/img/png/happy_face.png";
@@ -12,7 +12,7 @@ const Reviews = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchTripsData()
+    fetchReviewsData()
       .then((data) => setData(data))
       .catch((error) => setError(error));
   }, []);
@@ -85,7 +85,7 @@ const Reviews = () => {
           <div className="ps-xl-5 col-xl-6 mt-5 mt-xl-0">
             <div className="row justify-content-center">
               <Slider className="d-xl-none" {...sliderSettings}>
-                {data.data.reviews.map((reviews) => (
+                {data.data.map((reviews) => (
                   <li className="p-3" key={reviews.id}>
                     <div className="bg_gradient h-100">
                       <div className="box_review_small w-100">
@@ -137,7 +137,7 @@ const Reviews = () => {
                 ))}
               </Slider>
               <Slider className="d-none d-xl-flex mt-4" {...sliderSettings2}>
-                {data.data.reviews.map((reviews) => (
+                {data.data.map((reviews) => (
                   <li className="p-3 " key={reviews.id}>
                     <div className="bg_gradient h-100">
                       <div className="box_review_small w-100">

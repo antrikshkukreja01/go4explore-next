@@ -20,12 +20,12 @@ const Footer = () => {
                 Company
               </p>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/AboutUs"
                 >
                   About Us
-                </a>
+                </Link>
               </article>
 
               <article>
@@ -122,50 +122,50 @@ const Footer = () => {
                 International
               </p>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/vietnam"
                 >
                   Vietnam
-                </a>
+                </Link>
               </article>
               <article>
                 {" "}
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/thailand"
                 >
                   Thailand
-                </a>
+                </Link>
               </article>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/kazakhstan"
                 >
                   Kazakhstan
-                </a>
+                </Link>
               </article>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/bali"
                 >
                   Bali
-                </a>
+                </Link>
               </article>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/dubai"
                 >
                   Dubai
-                </a>
+                </Link>
               </article>
               <article>
                 <a
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="trip/bhutan"
                 >
                   Bhutan
                 </a>
@@ -176,32 +176,36 @@ const Footer = () => {
                 Quick Links
               </p>
 
-              <Link
-                href="/Privacy"
-                className=" fw-normal fs_xsm text-black font_poppins
+              <div className=" d-block">
+                <Link
+                  className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-              >
-                {" "}
-                Privacy Policy
-              </Link>
-
-              <Link
-                className=" fw-normal fs_xsm text-black font_poppins
+                  href="/Privacy"
+                >
+                  {" "}
+                  Privacy Policy
+                </Link>
+              </div>
+              <div className=" d-block">
+                <Link
+                  className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-                href="/Terms"
-              >
-                {" "}
-                Terms & Conditions
-              </Link>
-
-              <Link
-                className=" fw-normal fs_xsm text-black font_poppins
+                  href="/Terms"
+                >
+                  {" "}
+                  Terms & Conditions
+                </Link>
+              </div>
+              <div className=" d-block">
+                <Link
+                  className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-                href="/Cancellation"
-              >
-                {" "}
-                Cancellation & Refund Policy
-              </Link>
+                  href="/Cancellation"
+                >
+                  {" "}
+                  Cancellation & Refund Policy
+                </Link>
+              </div>
             </div>
           </div>
           <div className=" row justify-content-md-end pt-md-5">
