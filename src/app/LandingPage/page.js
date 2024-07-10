@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import LandingPageHeader from "@/components/LandingPageHeader";
-import HandPicked from "@/components/HandPicked";
+// import HandPicked from "@/components/HandPicked";
 import BestDeals from "@/components/BestDeals";
-import SpitiTripPackages from "@/components/SpitiTripPackages";
-import FaqSpiti from "@/components/FaqSpiti";
+// import SpitiTripPackages from "@/components/SpitiTripPackages";
+// import FaqSpiti from "@/components/FaqSpiti";
 import Reviews from "@/components/Reviews";
 import TravelWithUs from "@/components/TravelWithUs";
 
