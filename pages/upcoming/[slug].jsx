@@ -8,6 +8,7 @@ import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import Link from "next/link";
+import Image from "next/image";
 
 const Test = ({ slug }) => {
   const [data, setData] = useState(null);
@@ -87,10 +88,13 @@ const Test = ({ slug }) => {
             {data.data.packages.map((pkg) => (
               <div className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
-                  <img
-                    className="rounded-4 w-100"
+                  <Image
+                    className="rounded-4 "
                     src={pkg.image}
-                    height={280}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "280px" }} // optional
                     alt="img"
                   />
                   <p className=" bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">

@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import Link from "next/link";
 import axios from "axios";
+import Image from "next/image";
 
 const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
@@ -23,10 +24,12 @@ const Test = ({ data }) => {
             <div className="col-8">
               <div className="px-3" key={data.id}>
                 <div className="d-flex align-items-center gap-2">
-                  <img
+                  <Image
                     className="rounded-5"
-                    width={40}
-                    height={40}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "40px", height: "40px" }} // optional
                     src={data.data.user.image}
                     alt={data.data.user.name}
                   />

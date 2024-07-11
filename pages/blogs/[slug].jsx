@@ -8,6 +8,7 @@ import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import Link from "next/link";
+import Image from "next/image";
 
 const Test = ({ slug }) => {
   const [data, setData] = useState(null);
@@ -42,9 +43,12 @@ const Test = ({ slug }) => {
               <p className=" mt-4 mb-4 text-center text-black font_poppins fw-semibold fs_xl">
                 {blogs.name}
               </p>
-              <img
-                height={500}
-                className=" w-100  rounded-4"
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "500px" }} // optional
+                className="   rounded-4"
                 src={blogs.image}
                 alt={blogs.alt_tag}
               />
@@ -82,8 +86,12 @@ const Test = ({ slug }) => {
                     Quisquam illum nisi maiores libero cum quaerat pariatur
                     repellendus vel.
                   </p>
-                  <img
-                    className=" w-100  rounded-4 mt-5"
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "100%" }} // optional
+                    className="  rounded-4 mt-5"
                     src={blogs.image}
                     alt="img2"
                   />

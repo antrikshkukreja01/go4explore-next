@@ -110,10 +110,13 @@ const Test = ({ data }) => {
       <section className=" py-5">
         <div className=" container">
           <header key={data.data.id} className=" position-relative  px-3  ">
-            <img
-              className=" w-100 rounded-4"
+            <Image
+              className="  rounded-4"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "500px" }} // optional
               src={data.data.image}
-              height={500}
               alt={data.data.name}
             />
             <h1 className=" text-white fw-bold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
