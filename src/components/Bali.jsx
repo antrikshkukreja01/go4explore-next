@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
 import Slider from "react-slick";
-import bali from "../assets/img/webp/BaliSlider.webp";
+import meghalaya from "../assets/img/webp/meghalaya_banner.webp";
+import himachal from "../assets/img/webp/himachal_banner.webp";
+import bhutan from "../assets/img/webp/bhutan_banner.webp";
+import thailand from "../assets/img/webp/thailand_banner.webp";
 import img_himachal from "../assets/img/webp/Himachal.webp";
 import img_kashmir from "../assets/img/webp/Kashmir.webp";
 import img_kerala from "../assets/img/webp/Kerala.webp";
@@ -96,22 +99,29 @@ const Bali = () => {
             <Link href="/trip/bali">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
-                src={bali}
-                alt="bali"
+                src={thailand}
+                alt="thailand"
               />
             </Link>
             <Link href="/trip/bali">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
-                src={bali}
-                alt="bali"
+                src={bhutan}
+                alt="bhutan"
               />
             </Link>
             <Link href="/trip/bali">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
-                src={bali}
-                alt="bali"
+                src={himachal}
+                alt="himachal"
+              />
+            </Link>
+            <Link href="/trip/bali">
+              <Image
+                className=" rounded-4  w-100  h_baliimg"
+                src={meghalaya}
+                alt="meghalaya"
               />
             </Link>
           </Slider>

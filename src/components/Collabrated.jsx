@@ -29,110 +29,110 @@ const Collaborated = () => {
         </p>
         <div className="marquee mt-4 ">
           <div className="marquee__group">
-            <a href="#">
+            <div className=" pointer">
               <Image width={130} src={logo1} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo2} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo3} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo4} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo5} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo6} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo7} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo16} alt="top" />
-            </a>
+            </div>
           </div>
           <div aria-hidden="true" className="marquee__group">
-            <a href="#">
+            <div className=" pointer">
               <Image width={130} src={logo1} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo2} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo3} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo4} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo5} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo6} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo7} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo16} alt="top" />
-            </a>
+            </div>
           </div>{" "}
         </div>
         <div className="marquee mt-4 mt-sm-5 ">
           <div className="marquee__group">
-            <a href="#">
+            <div className=" pointer">
               <Image width={130} src={logo8} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo9} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo10} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo11} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo12} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo13} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo14} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo15} alt="top" />
-            </a>
+            </div>
           </div>
           <div aria-hidden="true" className="marquee__group">
-            <a href="#">
+            <div className=" pointer">
               <Image width={130} src={logo8} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo9} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo10} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo11} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo12} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo13} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo14} alt="top" />
-            </a>
-            <a href="#">
+            </div>
+            <div className=" pointer">
               <Image width={130} src={logo15} alt="top" />
-            </a>
+            </div>
           </div>{" "}
         </div>
       </div>

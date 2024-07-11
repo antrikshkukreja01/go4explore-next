@@ -438,6 +438,12 @@ nav {
   .h-300 {
     height: 300px !important;
   }
+  .h_160 {
+    height: 180px !important;
+  }
+  .height_200 {
+    height: 200px !important;
+  }
 }
 @media (min-width: 768px) {
   .h-300 {

@@ -24,6 +24,7 @@ const Test = ({ data }) => {
   var settings = {
     dots: false,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -70,7 +71,7 @@ const Test = ({ data }) => {
             {data.data.category.categoryname} For You
           </h2>
 
-          <div className="d-flex align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
+          <div className="d-none align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
             {[
               "All Trips",
               "June 2024",
@@ -81,6 +82,7 @@ const Test = ({ data }) => {
               "Nov 2024",
             ].map((month) => (
               <button
+                key={month}
                 className={`trip_btn fs_xsm fw-semibold white_space ${
                   activeMonth === month ? "active" : ""
                 }`}
@@ -100,15 +102,17 @@ const Test = ({ data }) => {
             {data.data.packages.map((pkg) => (
               <div className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
-                  <Image
-                    className="rounded-4 "
-                    src={pkg.image}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "280px" }} // optional
-                    alt="img"
-                  />
+                  {pkg.image && (
+                    <Image
+                      className="rounded-4"
+                      src={pkg.image}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "280px" }} // optional
+                      alt="img"
+                    />
+                  )}
                   <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
                     {pkg.duration}
                   </p>
@@ -116,7 +120,7 @@ const Test = ({ data }) => {
                 <div className="h_160 flex-column d-flex justify-content-between">
                   <article>
                     <h2 className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
-                      {pkg.slug}
+                      {pkg.name}
                     </h2>
                     {pkg.discounted_price ? (
                       <div className="d-flex align-items-center gap-4">
@@ -156,6 +160,7 @@ const Test = ({ data }) => {
               </div>
             ))}
           </Slider>
+
           <div className=" bg-light p-4 rounded-3 mt-5">
             <p className=" mb-0 fw-semibold fs_lg text-black font_poppins border-bottom border-2 pb-3 ">
               About "Lorem" Tour Packages

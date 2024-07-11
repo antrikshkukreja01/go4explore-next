@@ -22,7 +22,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="/AboutUs"
+                  href="/aboutus"
                 >
                   About Us
                 </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="/TravelFourm"
+                  href="/forum"
                 >
                   Forums
                 </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/vietnam"
+                  href="/trip/vietnam"
                 >
                   Vietnam
                 </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
                 {" "}
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/thailand"
+                  href="/trip/thailand"
                 >
                   Thailand
                 </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/kazakhstan"
+                  href="/trip/kazakhstan-tour-packages"
                 >
                   Kazakhstan
                 </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/bali"
+                  href="/trip/bali"
                 >
                   Bali
                 </Link>
@@ -157,7 +157,7 @@ const Footer = () => {
               <article>
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/dubai"
+                  href="/trip/dubai"
                 >
                   Dubai
                 </Link>
@@ -165,7 +165,7 @@ const Footer = () => {
               <article>
                 <a
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="trip/bhutan"
+                  href="/trip/bhutan-tour-packages"
                 >
                   Bhutan
                 </a>
@@ -180,7 +180,7 @@ const Footer = () => {
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-                  href="/Privacy"
+                  href="/privacy-policy"
                 >
                   {" "}
                   Privacy Policy
@@ -190,7 +190,7 @@ const Footer = () => {
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-                  href="/Terms"
+                  href="/terms-&-condition"
                 >
                   {" "}
                   Terms & Conditions
@@ -200,7 +200,7 @@ const Footer = () => {
                 <Link
                   className=" fw-normal fs_xsm text-black font_poppins 
                 text-decoration-none"
-                  href="/Cancellation"
+                  href="/Cancellation-and-Refund-Policy"
                 >
                   {" "}
                   Cancellation & Refund Policy
