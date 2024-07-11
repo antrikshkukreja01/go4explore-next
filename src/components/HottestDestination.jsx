@@ -49,7 +49,7 @@ const HottestDestination = () => {
         <div className=" container">
           <h2 className=" font_poppins fs_xl fw-semibold text-capitalize text-black text-center">
             Hottest Destination Across Globe{" "}
-            <Image width={40} height={50} src={fire} alt="fire" />
+            <Image className=" h-auto" width={30} src={fire} alt="fire" />
           </h2>
           <div className=" row mt-5 justify-content-center d-none d-sm-flex ">
             <div className="p-4 col-6 col-md-4 col-lg-3">

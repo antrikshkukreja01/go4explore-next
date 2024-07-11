@@ -155,15 +155,14 @@ const Test = ({ data }) => {
           </Slider>
           <div className=" bg-light p-4 rounded-3 mt-5">
             <p className=" mb-0 fw-semibold fs_lg text-black font_poppins border-bottom border-2 pb-3 ">
-              About Spiti Valley Tour Packages
+              About "Lorem" Tour Packages
             </p>
             <p className=" fs_xsm fw-normal text-black font_poppins mb-0 mt-4">
-              Do you live in Delhi, Bangalore, Hyderabad, Chennai, Mumbai,
-              Ahmedabad, Vadodara, Kolkata or any city in India and planning for
-              an upcoming trip either in groups or solo? No worries, Go4Explore
-              has a buffet of amazing travel packages for every kind of
-              wanderlust soul. Go4Explore has conducted 2500+ trips over last 7
-              years.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              ipsa voluptas pariatur ad nesciunt ipsum facere? Libero, dolore
+              id! Reprehenderit ipsam suscipit, possimus a mollitia voluptatibus
+              numquam maxime nihil delectus quibusdam, cumque id, saepe minus
+              tempora excepturi fuga provident? Exercitationem.
             </p>
             {!showviewMore && (
               <div className=" d-flex justify-content-end w-100">
@@ -185,16 +184,12 @@ const Test = ({ data }) => {
             {showviewMore && (
               <>
                 <p className="fs_xsm fw-normal text-black font_poppins mb-0 mt-4">
-                  Bordering with Tibet and home to some of the oldest Buddhist
-                  monasteries in the Himalayas, Spiti is a cold desert mountain
-                  valley, sparsely populated region whose beauty unveils after a
-                  challenging and tricky ride through the most treacherous roads
-                  of the mighty Himalayas. The term ‘Spiti’ means ‘The Middle
-                  Land’ - land between the lush green valleys and the cold
-                  mountain deserts of the Himalayas. Thanks to the thrilling
-                  roadways, rustic landscapes and beautiful clear skies, road
-                  trip to Himachal’s Spiti Valley is a once in a lifetime
-                  experience. Decorated with beautiful villages
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+                  ipsa voluptas pariatur ad nesciunt ipsum facere? Libero,
+                  dolore id! Reprehenderit ipsam suscipit, possimus a mollitia
+                  voluptatibus numquam maxime nihil delectus quibusdam, cumque
+                  id, saepe minus tempora excepturi fuga provident?
+                  Exercitationem.
                 </p>
                 <div className=" d-flex justify-content-end w-100">
                   <button

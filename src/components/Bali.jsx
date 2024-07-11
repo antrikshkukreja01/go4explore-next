@@ -117,7 +117,7 @@ const Bali = () => {
           </Slider>
           <h2 className=" font_poppins my-4 my-sm-5 fs_xl  fw-semibold text-capitalize text-black text-center">
             Find Your Perfect Escape
-            <Image width={30} className="  ms-2" src={heart} alt="heart" />
+            <Image width={30} className="   ms-2" src={heart} alt="heart" />
           </h2>
           <Slider {...settings2}>
             <Link
@@ -125,7 +125,7 @@ const Bali = () => {
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image
-                className=" rounded-4  h_300 w-100 "
+                className=" rounded-4 TripPkg_img w-100 "
                 src={img_himachal}
                 alt="img_location"
               />
@@ -141,7 +141,7 @@ const Bali = () => {
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image
-                className=" rounded-4  h_300 w-100 "
+                className=" rounded-4 TripPkg_img w-100 "
                 src={img_uttarakhand}
                 alt="img_location"
               />
@@ -157,7 +157,7 @@ const Bali = () => {
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image
-                className=" rounded-4  h_300 w-100 "
+                className=" rounded-4 TripPkg_img w-100 "
                 src={img_kashmir}
                 alt="img_location"
               />
@@ -173,7 +173,7 @@ const Bali = () => {
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image
-                className=" rounded-4  h_300 w-100 "
+                className=" rounded-4 TripPkg_img w-100 "
                 src={img_bhutan}
                 alt="img_location"
               />
@@ -189,7 +189,7 @@ const Bali = () => {
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image
-                className=" rounded-4  h_300 w-100 "
+                className=" rounded-4 TripPkg_img w-100 "
                 src={img_kerala}
                 alt="img_location"
               />

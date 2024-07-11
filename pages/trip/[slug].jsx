@@ -13,6 +13,12 @@ import Reviews from "@/components/Reviews";
 import TravelWithUs from "@/components/TravelWithUs";
 import Image from "next/image";
 
+function formatPrice(number) {
+  return new Intl.NumberFormat("en-IN", {
+    useGrouping: true,
+  }).format(number);
+}
+
 const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
   if (data.error) return <div>Error loading data</div>;
@@ -64,20 +70,20 @@ const Test = ({ data }) => {
                 {pkg.discounted_price ? (
                   <div className="d-flex align-items-center gap-4">
                     <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                      ₹{pkg.price}
+                      ₹{formatPrice(pkg.price)}
                     </p>
                     <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                      ₹{pkg.discounted_price} per person
+                      ₹{formatPrice(pkg.discounted_price)} per person
                     </p>
                   </div>
                 ) : (
                   <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                    ₹{pkg.price} per person
+                    ₹{formatPrice(pkg.price)} per person
                   </p>
                 )}
                 {pkg.discount && (
                   <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                    Discount: ₹{pkg.discount}
+                    Discount: ₹{formatPrice(pkg.discount)}
                   </p>
                 )}
               </article>
@@ -101,14 +107,19 @@ const Test = ({ data }) => {
       </Slider>
     ) : (
       packages.map((pkg) => (
-        <li className="px-3" key={pkg.id}>
+        <div className="px-3" key={pkg.id}>
           <div className="position-relative mb-4">
-            <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+            <Link
+              className=" text-decoration-none"
+              href={`/trips/${encodeURIComponent(pkg.slug)}`}
+            >
               <Image
                 className=" w-100 rounded-4 "
                 src={pkg.image}
-                height={370}
                 width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "370px" }} // optional
                 alt="img"
               />
             </Link>
@@ -118,7 +129,10 @@ const Test = ({ data }) => {
           </div>
           <div className="h_160 flex-column d-flex justify-content-between">
             <article>
-              <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
+              <Link
+                className=" text-decoration-none"
+                href={`/trips/${encodeURIComponent(pkg.slug)}`}
+              >
                 <p className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
                   {pkg.name}
                 </p>
@@ -126,20 +140,20 @@ const Test = ({ data }) => {
               {pkg.discounted_price ? (
                 <div className="d-flex align-items-center gap-4">
                   <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                    ₹{pkg.price}
+                    ₹{formatPrice(pkg.price)}
                   </p>
                   <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                    ₹{pkg.discounted_price} per person
+                    ₹{formatPrice(pkg.discounted_price)} per person
                   </p>
                 </div>
               ) : (
                 <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                  ₹{pkg.price} per person
+                  ₹{formatPrice(pkg.price)} per person
                 </p>
               )}
               {pkg.discount && (
                 <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                  Discount: ₹{pkg.discount}
+                  Discount: ₹{formatPrice(pkg.discount)}
                 </p>
               )}
             </article>
@@ -158,7 +172,7 @@ const Test = ({ data }) => {
               </a>
             </div>
           </div>
-        </li>
+        </div>
       ))
     );
   };

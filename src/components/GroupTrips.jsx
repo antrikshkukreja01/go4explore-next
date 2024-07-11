@@ -71,20 +71,20 @@ const GroupTrips = () => {
 
   return (
     <>
-      <section id="grouptrips" className="py-5">
+      <section id="grouptrips" className="py-5 ">
         <div className="container">
           <p className="font_poppins mb-4 mb-sm-5 fs_xl fw-semibold text-capitalize text-black text-center">
             Upcoming Group Trips For You{" "}
             <Image
               width={30}
-              className=" w_30"
+              className=" w_30 h-25"
               src={star_emoji}
               alt="star_emoji"
             />
           </p>
 
           {/* Month Selector */}
-          <div className="d-flex align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
+          <div className="d-flex align-items-center gap-2 gap-sm-4 justify-content-lg-center mb-4  mb-md-5 overflow_scroll">
             {[
               "June 2024",
               "July 2024",
@@ -112,11 +112,18 @@ const GroupTrips = () => {
 
           <Slider {...settings}>
             {data.data.packages.map((pkg) => (
-              <li className="px-3" key={pkg.id}>
+              <div className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
                   <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
                     <div className=" image_280 rounded-4">
-                      <img width={300} height={300} src={pkg.image} alt="img" />
+                      <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }} // optional
+                        src={pkg.image}
+                        alt="img"
+                      />
                     </div>
                     <p className="bg_yellow rounded-3 position-absolute text-black top-100 start-50 translate-middle fw-normal fs_xsm font_poppins px-2 py-1">
                       {pkg.duration}
@@ -168,7 +175,7 @@ const GroupTrips = () => {
                     </a>
                   </div>
                 </div>
-              </li>
+              </div>
             ))}
           </Slider>
         </div>

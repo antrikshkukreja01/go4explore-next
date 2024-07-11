@@ -398,6 +398,9 @@ video {
 .slick-next:before {
   content: url(../assets/img/webp/next.webp) !important;
 } */
+#blogs .slick-dots {
+  bottom: -22px !important;
+}
 #stressfreetrip .slick-dots {
   bottom: -55px !important;
 }
@@ -464,9 +467,10 @@ h1 {
 .h-300 {
   height: 300px !important;
 }
-.h_300 {
-  height: 300px;
+.pkg_img {
+  width: 90px !important;
 }
+
 .h_baliimg {
   height: 400px;
 }
@@ -704,7 +708,7 @@ ul {
   transition: all ease-in-out 300ms;
 }
 .tripDetail_btn {
-  padding: 11px 19px;
+  padding: 11px 18px;
   border: 2px solid #2755b0;
   color: #2755b0;
   border-radius: 8px;
@@ -719,7 +723,7 @@ ul {
   transition: all ease-in-out 300ms;
 }
 .callback_btn {
-  padding: 11px 19px;
+  padding: 11px 18px;
   color: white;
   background-color: #2755b0;
   border-radius: 8px;
@@ -732,6 +736,9 @@ ul {
   border-radius: 8px;
   border: 2px solid #2755b0;
   transition: all ease-in-out 300ms;
+}
+.TripPkg_img {
+  height: 300px !important;
 }
 .boxTravelWithUs {
   border: 2px solid #2755b0;
@@ -1062,6 +1069,16 @@ html {
 .width-100 {
   width: 95%;
 }
+/* img */
+.image_280 {
+  height: 280px !important;
+  width: 280px !important;
+  overflow: hidden !important;
+}
+.box_1 {
+  height: 40px;
+  width: 40px;
+}
 
 @media screen and (max-width: 400px) {
   .image-row {
@@ -1073,6 +1090,20 @@ html {
   }
 }
 @media (max-width: 576px) {
+  .TripPkg_img {
+    height: 250px !important;
+  }
+  .h_160 {
+    height: 180px;
+  }
+  .image_280 {
+    height: 200px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .pkg_img {
+    width: 50px !important;
+  }
   .Header_video {
     height: 467px !important;
   }
@@ -1215,6 +1246,11 @@ html {
   }
 }
 @media (min-width: 576px) {
+  .image_280 {
+    height: 240px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
   .rounded_5 {
     border-radius: 8px !important;
   }
@@ -1356,15 +1392,4 @@ html {
   .top_10 {
     top: 10.5%;
   }
-}
-
-/* jbj */
-.image_280 {
-  height: 280px !important;
-  width: 280px !important;
-  overflow: hidden !important;
-}
-.box_1 {
-  height: 40px;
-  width: 40px;
 }

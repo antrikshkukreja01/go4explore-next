@@ -18,7 +18,7 @@ const Packages = () => {
                 href="trips-category/backpacking-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image className="pkg_img h-auto" src={bag} alt="bag" />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   Backpacking <br /> Trips
@@ -31,7 +31,7 @@ const Packages = () => {
                 href="trips-category/weekend-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={van} alt="van" />
+                  <Image className=" pkg_img h-auto" src={van} alt="van" />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   Weekend
@@ -45,7 +45,7 @@ const Packages = () => {
                 href="trips-category/international-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={plane} alt="plane" />
+                  <Image className=" pkg_img h-auto" src={plane} alt="plane" />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   International
@@ -59,7 +59,11 @@ const Packages = () => {
                 href="trips-category/adventure-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={travleing} alt="travleing" />
+                  <Image
+                    className=" pkg_img h-auto"
+                    src={travleing}
+                    alt="travleing"
+                  />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   Adventure <br /> Treks
@@ -72,7 +76,11 @@ const Packages = () => {
                 href="trips-category/honeymoon-packages"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={glasses} alt="glasses" />
+                  <Image
+                    className=" pkg_img h-auto"
+                    src={glasses}
+                    alt="glasses"
+                  />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   Honeymoon
@@ -86,7 +94,11 @@ const Packages = () => {
                 href="trips-category/corporate-trips"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={handshake} alt="handshake" />
+                  <Image
+                    className=" pkg_img h-auto"
+                    src={handshake}
+                    alt="handshake"
+                  />
                 </div>
                 <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
                   Corporate

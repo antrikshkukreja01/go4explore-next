@@ -56,7 +56,7 @@ const Header = () => {
                   <Image
                     width={30}
                     height={30}
-                    className="w_30"
+                    className="w_30 h-auto"
                     src={location}
                     alt="location"
                   />
@@ -80,7 +80,7 @@ const Header = () => {
                   <Image
                     width={30}
                     height={30}
-                    className="w_30"
+                    className="w_30 h-auto"
                     src={search}
                     alt="search"
                   />

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
+import Slider from "react-slick";
 import heart_eye from "../assets/img/png/love_emoji.png";
 import Image from "next/image";
 import { fetchBlogData } from "./Api";
@@ -37,10 +37,32 @@ const Blogs = () => {
     const options = { year: "numeric", month: "short", day: "numeric" };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
 
   return (
     <>
-      <section className="py-4 py-sm-5">
+      <section id="blogs" className="py-4 py-sm-5">
         <div className="container">
           <h2 className="font_poppins mb-4 mb-sm-5 fs_xl fw-semibold text-capitalize text-black text-center">
             Blogs To Fuel Your Wanderlust
@@ -51,10 +73,36 @@ const Blogs = () => {
               alt="heart_eye"
             />
           </h2>
-          <div className="row align-items-center">
+          <Slider className=" d-sm-none" {...settings}>
+            {otherBlogs.map((blog) => (
+              <div key={blog.id} className=" col-md-6 col-xl-12 ">
+                <Link
+                  className=" text-decoration-none"
+                  href={`/blogs/${encodeURIComponent(blog.slug)}`}
+                >
+                  <div className="bg_gradient mt-3 mx-2 h-auto">
+                    <div className="box_blog h-100">
+                      <img
+                        className="w-100 img_size"
+                        src={blog.image}
+                        alt="blog_img"
+                      />
+                      <p className="fs_xsm text-black mt-3 fw-medium font_poppins mb-0">
+                        Published on {formatDate(blog.created_at)}
+                      </p>
+                      <p className="mb-0 mt-2 fs_xl clr_blue font_poppins fw-semibold">
+                        {blog.name}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </Slider>
+          <div className="row align-items-center d-none d-sm-flex">
             <div className="col-xl-7">
               <div key={recentBlog.id}>
-                <div className="bg_gradient mt-3 mx-2 h_580">
+                <div className="bg_gradient mt-3 mx-2 h-auto">
                   <div className="box_blog h-100">
                     <img
                       className="w-100 img_size"
@@ -110,7 +158,7 @@ const Blogs = () => {
           </div>
           <div className="w-100 d-flex justify-content-center">
             <a
-              className="btn-hover mt-5 text-decoration-none font_poppins fw-semibold fs_sm d-inline-block"
+              className="btn-hover mt-4 mt-sm-5 text-decoration-none font_poppins fw-semibold fs_sm d-inline-block"
               href="#"
             >
               View More Blogs
