@@ -2,12 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
-import Link from "next/link";
 import axios from "axios";
+import Image from "next/image";
 
 const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
@@ -23,7 +22,7 @@ const Test = ({ data }) => {
             <div className="col-8">
               <div className="px-3" key={data.id}>
                 <div className="d-flex align-items-center gap-2">
-                  <img
+                  <Image
                     className="rounded-5"
                     width={40}
                     height={40}

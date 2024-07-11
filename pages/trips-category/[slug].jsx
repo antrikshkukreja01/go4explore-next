@@ -100,7 +100,7 @@ const Test = ({ data }) => {
             {data.data.packages.map((pkg) => (
               <div className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
-                  <img
+                  <Image
                     className="rounded-4 w-100"
                     src={pkg.image}
                     height={280}

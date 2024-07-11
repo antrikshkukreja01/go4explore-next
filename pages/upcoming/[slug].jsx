@@ -8,6 +8,7 @@ import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
 import Link from "next/link";
+import Image from "next/image";
 
 const Test = ({ slug }) => {
   const [data, setData] = useState(null);
@@ -87,7 +88,7 @@ const Test = ({ slug }) => {
             {data.data.packages.map((pkg) => (
               <div className="px-3" key={pkg.id}>
                 <div className="position-relative mb-4">
-                  <img
+                  <Image
                     className="rounded-4 w-100"
                     src={pkg.image}
                     height={280}

@@ -110,7 +110,7 @@ const Test = ({ data }) => {
       <section className=" py-5">
         <div className=" container">
           <header key={data.data.id} className=" position-relative  px-3  ">
-            <img
+            <Image
               className=" w-100 rounded-4"
               src={data.data.image}
               height={500}

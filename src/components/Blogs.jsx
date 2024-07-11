@@ -82,7 +82,7 @@ const Blogs = () => {
                 >
                   <div className="bg_gradient mt-3 mx-2 h-auto">
                     <div className="box_blog h-100">
-                      <img
+                      <Image
                         className="w-100 img_size"
                         src={blog.image}
                         alt="blog_img"
@@ -104,7 +104,7 @@ const Blogs = () => {
               <div key={recentBlog.id}>
                 <div className="bg_gradient mt-3 mx-2 h-auto">
                   <div className="box_blog h-100">
-                    <img
+                    <Image
                       className="w-100 img_size"
                       src={recentBlog.image}
                       alt="blog_img"
@@ -131,7 +131,7 @@ const Blogs = () => {
                       <div className="bg_gradient">
                         <div className="row box_blog_small align-items-center w-100">
                           <div className="col-xl-5 ps-0">
-                            <img
+                            <Image
                               className="rounded-4 w-100"
                               height={130}
                               src={blog.image}

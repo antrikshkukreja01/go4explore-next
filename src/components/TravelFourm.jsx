@@ -178,7 +178,7 @@ const TravelForum = () => {
               <div key={user.id} className="mb-4 blue_border rounded-3 p-3">
                 <div className="d-flex align-items-center justify-content-between w-100 mb-4">
                   <div className="d-flex align-items-center gap-2">
-                    <img
+                    <Image
                       className="rounded-5"
                       width={40}
                       height={40}
@@ -296,7 +296,7 @@ const TravelForum = () => {
                     <div className=" d-flex align-items-center justify-content-between">
                       {" "}
                       <div className="d-flex align-items-center gap-2">
-                        <img
+                        <Image
                           className="rounded-5"
                           width={40}
                           height={40}
