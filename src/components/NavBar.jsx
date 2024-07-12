@@ -38,13 +38,13 @@ const Nav = () => {
   }, [navShow]);
 
   return (
-    <nav className="py-2 py-sm-4 shadow">
+    <nav className="py-3 shadow">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center w-100">
           <Link href="/">
             <Image
               width={200}
-              className="logo_width h-auto"
+              className="logo_width h_auto "
               src={logo}
               alt="logo"
             />

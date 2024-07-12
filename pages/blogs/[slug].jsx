@@ -44,8 +44,11 @@ const Test = ({ slug }) => {
                 {blogs.name}
               </p>
               <Image
-                height={500}
-                className=" w-100  rounded-4"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "500px" }} // optional
+                className="   rounded-4"
                 src={blogs.image}
                 alt={blogs.alt_tag}
               />
@@ -84,7 +87,11 @@ const Test = ({ slug }) => {
                     repellendus vel.
                   </p>
                   <Image
-                    className=" w-100  rounded-4 mt-5"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "100%" }} // optional
+                    className="  rounded-4 mt-5"
                     src={blogs.image}
                     alt="img2"
                   />

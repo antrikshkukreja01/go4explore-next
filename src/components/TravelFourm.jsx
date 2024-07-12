@@ -180,8 +180,10 @@ const TravelForum = () => {
                   <div className="d-flex align-items-center gap-2">
                     <Image
                       className="rounded-5"
-                      width={40}
-                      height={40}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "40px", height: "40px" }}
                       src={user.user.image}
                       alt={user.user.name}
                     />
@@ -298,8 +300,10 @@ const TravelForum = () => {
                       <div className="d-flex align-items-center gap-2">
                         <Image
                           className="rounded-5"
-                          width={40}
-                          height={40}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          style={{ width: "40px", height: "40px" }}
                           src={answer.user.image}
                           alt={answer.user.name}
                         />

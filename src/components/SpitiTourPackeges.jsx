@@ -16,7 +16,15 @@ const SpitiTourPackages = () => {
           <div className=" row mt-3">
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className="  rounded-4"
+                  src={img_1}
+                  alt="img_1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>
@@ -30,7 +38,15 @@ const SpitiTourPackages = () => {
             </div>
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className="  rounded-4"
+                  src={img_1}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                  alt="img_1"
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>
@@ -44,7 +60,15 @@ const SpitiTourPackages = () => {
             </div>
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className="  rounded-4"
+                  src={img_1}
+                  alt="img_1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>
@@ -58,7 +82,15 @@ const SpitiTourPackages = () => {
             </div>
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className="  rounded-4"
+                  src={img_1}
+                  alt="img_1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>
@@ -72,7 +104,15 @@ const SpitiTourPackages = () => {
             </div>
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className="  rounded-4"
+                  src={img_1}
+                  alt="img_1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>
@@ -86,7 +126,15 @@ const SpitiTourPackages = () => {
             </div>
             <div className="mt-4 col-sm-6 col-lg-4">
               <div className=" borderbox rounded-4 p-3">
-                <Image className=" w-100 rounded-4" src={img_1} alt="img_1" />
+                <Image
+                  className=" rounded-4"
+                  src={img_1}
+                  alt="img_1"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                />
                 <p className=" mb-0 fw-semibold fs_sm text-black font_poppins mt-3">
                   Key Monastery
                 </p>

@@ -34,17 +34,27 @@ const Test = ({ data }) => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const renderPackages = (packages) => {
+    if (!packages || !packages.length) return null;
+
     return packages.length > 1 ? (
       <Slider {...sliderSettings}>
         {packages.map((pkg) => (
-          <div key={pkg.id} className="px-3">
+          <div key={pkg.id} className="px-3 col-sm-4">
             <div className="position-relative mb-4">
               <Link href={`/trips/${encodeURIComponent(pkg.slug)}`}>
                 <Image
-                  className=" w-100 rounded-4 "
+                  className="w-100 rounded-4"
                   src={pkg.image}
                   width={0}
                   height={0}
@@ -60,7 +70,7 @@ const Test = ({ data }) => {
             <div className="h_160 flex-column d-flex justify-content-between">
               <article>
                 <Link
-                  className=" text-decoration-none"
+                  className="text-decoration-none"
                   href={`/trips/${encodeURIComponent(pkg.slug)}`}
                 >
                   <p className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
@@ -107,19 +117,19 @@ const Test = ({ data }) => {
       </Slider>
     ) : (
       packages.map((pkg) => (
-        <div className="px-3" key={pkg.id}>
+        <div className="px-3 col-sm-4" key={pkg.id}>
           <div className="position-relative mb-4">
             <Link
-              className=" text-decoration-none"
+              className="text-decoration-none"
               href={`/trips/${encodeURIComponent(pkg.slug)}`}
             >
               <Image
-                className=" w-100 rounded-4 "
+                className="w-100 rounded-4"
                 src={pkg.image}
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "370px" }} // optional
+                style={{ width: "100%", height: "350px" }} // optional
                 alt="img"
               />
             </Link>
@@ -130,7 +140,7 @@ const Test = ({ data }) => {
           <div className="h_160 flex-column d-flex justify-content-between">
             <article>
               <Link
-                className=" text-decoration-none"
+                className="text-decoration-none"
                 href={`/trips/${encodeURIComponent(pkg.slug)}`}
               >
                 <p className="pt-2 mb-2 text-capitalize font_poppins text-black fw-medium fs_md">
@@ -186,7 +196,7 @@ const Test = ({ data }) => {
           {data.data.offer.map((offer) => (
             <header key={offer.id} className="position-relative">
               <Image
-                className=" rounded-4"
+                className="rounded-4 height_200"
                 src={offer.uri}
                 width={0}
                 height={0}
@@ -229,7 +239,7 @@ const Test = ({ data }) => {
           })}
 
           <div className="row align-items-center">
-            <div className="col-8">
+            <div className="col-sm-8">
               <div>
                 {data.data.offer.map((offer) => (
                   <div className="mb-3" key={offer.id}>
@@ -241,7 +251,7 @@ const Test = ({ data }) => {
                 {renderPackages(data.data.trip.code1)}
               </div>
             </div>
-            <div className="col-4 mt-4 mt-xl-0">
+            <div className="col-sm-4 mt-4 mt-xl-0">
               <div className="border_box rounded-4 p-4 p-sm-5">
                 <p className="text-center mb-0 fw-semibold fs_xl font_poppins text-black">
                   Have Doubts? Talk To Our Travel Experts!
@@ -251,22 +261,22 @@ const Test = ({ data }) => {
                 </p>
                 <div className="d-flex flex-column align-items-center gap-3 gap-sm-4 mt-4">
                   <input
-                    className=" w-100 input_style_2 fs_xsm bg_gray text-black fw-normal  rounded-5 py-2 text-center"
+                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
                     type="text"
                     placeholder="Full Name"
                   />
                   <input
-                    className=" w-100 input_style_2 fs_xsm bg_gray text-black fw-normal  rounded-5 py-2 text-center"
+                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
                     type="tel"
                     placeholder="Phone Number"
                   />
                   <input
-                    className=" w-100 input_style_2 fs_xsm bg_gray text-black fw-normal  rounded-5 py-2 text-center"
+                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
                     type="email"
                     placeholder="Email"
                   />
                   <a
-                    className=" callback_btn white_space w-100 text-center text-decoration-none fs_xsm fw-medium"
+                    className="callback_btn white_space w-100 text-center text-decoration-none fs_xsm fw-medium"
                     href="#"
                   >
                     Request Callback
@@ -275,7 +285,7 @@ const Test = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className=" mt-5 ">
+          <div className="mt-5">
             {data.data.offer.map((offer) => (
               <div className="mb-3" key={offer.id}>
                 <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
@@ -285,7 +295,7 @@ const Test = ({ data }) => {
             ))}
             {renderPackages(data.data.trip.code2)}
           </div>
-          <div className=" mt-5">
+          <div className="mt-5">
             {data.data.offer.map((offer) => (
               <div className="mb-3" key={offer.id}>
                 <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
