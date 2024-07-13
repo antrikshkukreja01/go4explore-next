@@ -9,7 +9,7 @@ import Image from "next/image";
 const JoinOurTeam = () => {
   return (
     <>
-      <section className="pt-4 pt-sm-5 ">
+      <section>
         <div
           style={{
             backgroundImage: `url(${bg_img.src})`,
@@ -19,10 +19,11 @@ const JoinOurTeam = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
+          className="pt-4 pt-sm-5 position-relative "
         >
           <div className=" container">
-            <div className=" row align-items-center justify-content-center h_500 ">
-              <div className=" col-sm-4">
+            <div className=" row align-items-lg-center align-items-end justify-content-center team_height ">
+              <div className=" col-lg-4">
                 <p className=" mb-0 fs_xsm text-white font_poppins fw-normal">
                   We at Go4Explore are proud to boast that we have a team of
                   over
@@ -35,16 +36,23 @@ const JoinOurTeam = () => {
                 </p>
               </div>
 
-              <div className="  col-sm-8">
-                <div className="row align-items-center justify-content-end position-relative">
-                  <div className="col-6 position-absolute start-0 bottom-20">
+              <div className="  col-lg-8">
+                <div className="row align-items-center justify-content-end flex-column-reverse flex-md-row ">
+                  <div className="col-6 position-absolute start-50 translate-middle-x bottom-0 d-none d-lg-inline-block">
                     <Image
-                      className=" w-100 h_400"
+                      className=" w-75 h_400"
                       src={caption_img}
                       alt="caption_img"
                     />
                   </div>
-                  <div className="col-6">
+                  <div className="col-md-5  d-lg-none ">
+                    <Image
+                      className=" w-100 h-75"
+                      src={caption_img}
+                      alt="caption_img"
+                    />
+                  </div>
+                  <div className="  col-md-7 mt-4 ">
                     {" "}
                     <p className=" mb-0 fs_3xl text-white font_poppins fw-bold">
                       50+ on-ground & coolest Trip Captains

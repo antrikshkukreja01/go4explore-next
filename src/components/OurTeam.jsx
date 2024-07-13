@@ -15,10 +15,10 @@ const Ourteam = () => {
           <p className="font_poppins mb-0 mb-sm-5 fs_xxl fw-semibold text-capitalize text-black text-center">
             Say Hi To Our Core Team
           </p>
-          <div className=" row justify-content-evenly gap-lg-2">
-            <div className=" mt-4 col-6 col-lg-3">
+          <div className=" row justify-content-evenly gap-xl-2 ">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100 "
                     src={sahil}
@@ -33,9 +33,9 @@ const Ourteam = () => {
                 </p>
               </div>
             </div>
-            <div className=" mt-4 col-6 col-lg-3">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100 "
                     src={tanya}
@@ -50,9 +50,9 @@ const Ourteam = () => {
                 </p>
               </div>
             </div>
-            <div className=" mt-4 col-6 col-lg-3">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100 "
                     src={amit}
@@ -68,9 +68,9 @@ const Ourteam = () => {
               </div>
             </div>
 
-            <div className=" mt-4 col-6 col-lg-3">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100 "
                     src={priyanka}
@@ -85,9 +85,9 @@ const Ourteam = () => {
                 </p>
               </div>
             </div>
-            <div className=" mt-4 col-6 col-lg-3">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100 "
                     src={pankaj}
@@ -102,9 +102,9 @@ const Ourteam = () => {
                 </p>
               </div>
             </div>
-            <div className=" mt-4 col-6 col-lg-3">
+            <div className=" mt-4 col-6 col-lg-4 col-xl-3">
               <div className=" borderbox d-flex  justify-content-center align-items-center flex-column p-2 p-lg-4 rounded-4">
-                <article className=" borderbox w-75  p-2 rounded_100">
+                <article className=" borderbox box_width p-2 rounded_100">
                   <Image
                     className=" w-100 rounded_100 h-100  "
                     src={amit2}

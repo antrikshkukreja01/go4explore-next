@@ -431,6 +431,16 @@ nav {
   border-radius: 30px;
   transition: all ease-in-out 300ms;
 }
+
+.overflow_scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.trip_btn {
+  display: inline-block;
+}
+
 .h-300 {
   height: 300px !important;
 }

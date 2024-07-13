@@ -17,19 +17,22 @@ const Founder = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          class=" position-relative py-5"
+          class=" position-relative py-5 pt-5 pb-0 pb-lg-5  px-3 px-lg-0"
         >
-          <span className=" position-absolute  start-0 top-50 translate-middle-y z-3">
+          <p className=" fw-bolder fs_3xl font_poppins text-center text-white  d-lg-none mb-3 ">
+            Founder
+          </p>
+          <span className=" position-absolute  start-0 top-50 d-none d-lg-inline  translate-middle-y z-3">
             <p className=" fw-bolder fs_3xl font_poppins rotate-90 text-white mb-0 ">
               Founder
             </p>
           </span>
-          <div className=" position-absolute bottom-0 end-0 w-35">
+          <div className=" position-absolute bottom-0 end-0 w-35 d-none d-lg-inline">
             <Image width={500} src={founder_img} alt="founder_img" />
           </div>
           <div className=" row  pt-4">
-            <div className=" col-sm-9 ps-5 ms-5">
-              <div className=" w-75 mx-auto">
+            <div className=" col-lg-9 ps-lg-5 ms-lg-5 pe-0">
+              <div className=" founder_width mx-auto">
                 <article className=" d-flex align-items-end">
                   <p className=" fw-bold fs_xl d-inline-block p-2 rounded-4  font_poppins clr_blue bg-white mb-3">
                     Jony Jindal{" "}
@@ -61,6 +64,14 @@ const Founder = () => {
                 </p>{" "}
               </div>
             </div>
+          </div>
+          <div className=" d-flex align-items-center justify-content-center d-lg-none">
+            <Image
+              height={350}
+              className="w-100"
+              src={founder_img}
+              alt="founder_img"
+            />
           </div>
         </div>
       </section>

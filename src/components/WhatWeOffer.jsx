@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
-import bag from "../assets/img/webp/bag.webp";
+import bike from "../assets/img/webp/bike.webp";
+import plane from "../assets/img/webp/plane.webp";
+import van from "../assets/img/webp/tripvan.webp";
+import resttable from "../assets/img/webp/resttable.webp";
 import handshake from "../assets/img/webp/handshake.webp";
+import trekking from "../assets/img/webp/travleing.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +13,7 @@ import Image from "next/image";
 
 const WhatWeOffer = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     arrows: false,
     speed: 500,
@@ -59,7 +63,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image width={90} src={van} alt="van" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   Fixed-
@@ -73,7 +77,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={handshake} alt="handshake" />
+                  <Image width={90} src={resttable} alt="resttable" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   Customized
@@ -87,7 +91,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image width={90} src={plane} alt="plane" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   International
@@ -101,7 +105,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image width={90} src={trekking} alt="trekking" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   Trekking
@@ -114,7 +118,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image width={90} src={bike} alt="bike" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   Bike Trips
@@ -127,7 +131,7 @@ const WhatWeOffer = () => {
                 href="#"
               >
                 <div className="packages_circle d-flex align-items-center justify-content-center">
-                  <Image width={90} src={bag} alt="bag" />
+                  <Image width={90} src={handshake} alt="handshake" />
                 </div>
                 <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                   Corporate
@@ -142,10 +146,11 @@ const WhatWeOffer = () => {
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={van} alt="van" />
               </div>
               <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
-                Backpacking <br /> Trips
+                Fixed-
+                <br /> Departures
               </p>
             </a>
             <a
@@ -153,34 +158,34 @@ const WhatWeOffer = () => {
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={resttable} alt="resttable" />
               </div>
               <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
-                Weekend
-                <br /> Getaways
+                Customized
+                <br /> Packages
               </p>
-            </a>
+            </a>{" "}
             <a
               className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={plane} alt="plane" />
               </div>
               <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
-                International <br /> Trips
+                International
+                <br /> Trips
               </p>
-            </a>
+            </a>{" "}
             <a
               className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={trekking} alt="trekking" />
               </div>
               <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
-                Adventure
-                <br /> Treks
+                Trekking
               </p>
             </a>
             <a
@@ -188,20 +193,20 @@ const WhatWeOffer = () => {
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={bike} alt="bike" />
               </div>
-              <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
-                Honeymoon <br /> Packages
+              <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
+                Bike Trips
               </p>
-            </a>
+            </a>{" "}
             <a
               className=" text-decoration-none d-flex align-items-center justify-content-center flex-column"
               href="#"
             >
               <div className="packages_circle d-flex align-items-center justify-content-center">
-                <Image width={90} src={bag} alt="bag" />
+                <Image width={50} src={handshake} alt="handshake" />
               </div>
-              <p className="mb-0 font_poppins fs_xsm fw-semibold mt-3 text-black text-center">
+              <p className="mb-0 font_poppins fs_sm fw-semibold mt-3 text-black text-center">
                 Corporate
                 <br /> Trips
               </p>

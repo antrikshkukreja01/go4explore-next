@@ -1,12 +1,12 @@
 "use client";
-import Destination1 from "../assets/img/webp/Card1.webp";
-import Destination2 from "../assets/img/webp/Card2.webp";
-import Destination3 from "../assets/img/webp/Card3.webp";
-import Destination4 from "../assets/img/webp/Card4.webp";
-import Destination5 from "../assets/img/webp/Card5.webp";
-import Destination6 from "../assets/img/webp/Card6.webp";
-import Destination7 from "../assets/img/webp/Card7.webp";
-import Destination8 from "../assets/img/webp/Card8.webp";
+import spitiVally from "../assets/img/webp/spitiVallyCard.jpg";
+import thailand from "../assets/img/webp/thailandCard.jpg";
+import kazakhstan from "../assets/img/webp/kazakhstanCard.jpg";
+import bali from "../assets/img/webp/baliCard.jpg";
+import singapore from "../assets/img/webp/singaporeCard.jpg";
+import himachalPradesh from "../assets/img/webp/himachalPradeshCard.jpg";
+import vietnam from "../assets/img/webp/vietnamCard.jpg";
+import dubai from "../assets/img/webp/dubaiCard.jpg";
 import fire from "../assets/img/png/fires_emoji.png";
 import Image from "next/image";
 import React from "react";
@@ -62,8 +62,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform"
-                    src={Destination1}
+                    src={spitiVally}
                     alt="destination"
+                    unoptimized
                   />
                 </div>
               </Link>
@@ -75,8 +76,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination2}
+                    src={thailand}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -88,8 +90,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination3}
+                    src={vietnam}
                     alt="destination"
+                    unoptimized
                   />
                 </div>
               </Link>
@@ -101,8 +104,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination4}
+                    src={dubai}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -114,8 +118,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination5}
+                    src={bali}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -127,8 +132,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination6}
+                    src={singapore}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -140,8 +146,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination7}
+                    src={himachalPradesh}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -156,8 +163,9 @@ const HottestDestination = () => {
                     width={200}
                     height={370}
                     className=" w-100 rounded-4 tranform "
-                    src={Destination8}
+                    src={kazakhstan}
                     alt="destination"
+                    unoptimized
                   />
                 </div>{" "}
               </Link>
@@ -168,10 +176,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination1}
+                  src={spitiVally}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -179,10 +188,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination2}
+                  src={thailand}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -190,10 +200,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination3}
+                  src={vietnam}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -201,10 +212,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination4}
+                  src={dubai}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -212,10 +224,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination5}
+                  src={bali}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -223,10 +236,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination6}
+                  src={singapore}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -234,10 +248,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination7}
+                  src={himachalPradesh}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>
@@ -245,10 +260,11 @@ const HottestDestination = () => {
               <div className="bg_gradient  ps-2">
                 <Image
                   className=" w-100 rounded-4 tranform"
-                  src={Destination8}
+                  src={kazakhstan}
                   width={200}
                   height={300}
                   alt="destination"
+                  unoptimized
                 />
               </div>
             </div>

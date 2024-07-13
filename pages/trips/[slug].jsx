@@ -39,7 +39,11 @@ const Test = ({ data }) => {
       setOriginalPrice(9499);
     }
   };
-
+  function formatPrice(number) {
+    return new Intl.NumberFormat("en-IN", {
+      useGrouping: true,
+    }).format(number);
+  }
   const [activeLink, setActiveLink] = useState("");
 
   const handleLinkClick = (link) => {
@@ -119,7 +123,7 @@ const Test = ({ data }) => {
               src={data.data.image}
               alt={data.data.name}
             />
-            <h1 className=" text-white fw-bold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
+            <h1 className=" text-white fw-semibold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
               {data.data.name}
             </h1>
           </header>
@@ -532,20 +536,20 @@ const Test = ({ data }) => {
                       {data.data.discounted_price ? (
                         <div className="d-flex align-items-center gap-4">
                           <p className="mb-0 fw-semibold fs_xxl font_poppins text-black">
-                            ₹{data.data.discounted_price}
+                            ₹{formatPrice(data.data.discounted_price)}
                           </p>
                           <p className="mb-0 fw-medium fs_md font_poppins clr_gray text-decoration-line-through">
-                            ₹{data.data.price}
+                            ₹{formatPrice(data.data.price)}
                           </p>
                         </div>
                       ) : (
                         <p className="mb-0 fw-semibold fs_xxl font_poppins text-black">
-                          ₹{data.data.price}
+                          ₹{formatPrice(data.data.price)}
                         </p>
                       )}
                       {data.data.discount && (
                         <p className="mb-0 fw-medium fs_md font_poppins clr_gray text-decoration-line-through">
-                          ₹{data.data.discount}
+                          ₹{formatPrice(data.data.discount)}
                         </p>
                       )}
                     </article>
@@ -591,7 +595,7 @@ const Test = ({ data }) => {
                         Tempo Traveller <br /> - {occupancy} Occupancy
                       </p>
                       <p className="mb-0 fw-medium fs_md font_poppins text-black">
-                        &#x20b9; {data.data.double_price}
+                        &#x20b9; {formatPrice(data.data.double_price)}
                       </p>
                     </div>
                     <a className="white_space callback_btn mb-2 mt-3 fs_xsm fw-medium w-100 d-inline-block text-center text-decoration-none">

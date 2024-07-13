@@ -9,7 +9,7 @@ import bg from "../assets/img/webp/aboutbg.webp";
 const AboutUsSection = () => {
   return (
     <>
-      <section className=" pb-5">
+      <section>
         {" "}
         <div
           style={{
@@ -20,9 +20,9 @@ const AboutUsSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          class="  pt-5   position-relative"
+          className=" py-5 px-2 px-lg-0   position-relative"
         >
-          <p className=" fw-bolder fs_3xl font_poppins text-center pt-4 pt-xl-0 d-xl-none  text-white mb-0 ">
+          <p className=" fw-bolder fs_3xl font_poppins text-center pt-lg-4 pt-xl-0 d-xl-none  text-white mb-0 ">
             About Us
           </p>
           <span className=" d-none d-xl-flex position-absolute  start-0 top-50 translate-middle-y z-3">
@@ -30,11 +30,11 @@ const AboutUsSection = () => {
               About Us
             </p>
           </span>
-          <div class=" width-100  mx-auto text-center d-flex flex-column pt-4">
-            <p className=" fw-bold fs_xxl font_poppins text-white mb-3">
+          <div class=" width-100  mx-auto  d-flex flex-column pt-4">
+            <p className=" fw-bold fs_xxl text-center font_poppins text-white mb-3">
               Who We Are?
             </p>{" "}
-            <p className=" fw-normal fs_sm  mx-auto font_poppins text-white ">
+            <p className=" fw-normal fs_sm  mx-auto font_poppins text-white mt-3 mt-lg-0 ">
               Go4Explore is a community of avid travellers badly bitten by the
               travel bug thus providing you an unmatched travel experience as
               per your interest and comfort. Using our & experience.We curate
@@ -46,35 +46,55 @@ const AboutUsSection = () => {
               We design well-planned trip itineraries, trekking & camping
               activities without exceeding your budget.
             </p>{" "}
-            <div className=" row  align-items-center  mb-5 mt-5 justify-content-center">
+            <div className=" row  align-items-center  my-3 my-lg-5 justify-content-center">
               <div className=" mt-4 col-6 col-lg-4 col-xl-3">
                 <div className=" d-flex flex-column align-items-center justify-content-between User_box">
-                  <Image width={80} src={travlingvan} alt="travlingvan" />
-                  <p className=" fs_md text-white fw-semibold font_poppins mb-0">
+                  <Image
+                    width={80}
+                    className="w_50  h-auto"
+                    src={travlingvan}
+                    alt="travlingvan"
+                  />
+                  <p className=" fs_md text-white fw-semibold font_poppins mb-0 mt-2 mt-lg-0 text-center">
                     2500+ Trips Hosted PAN India & Abroad
                   </p>
                 </div>
               </div>
               <div className=" mt-4 col-6 col-lg-4 col-xl-3">
                 <div className=" d-flex flex-column align-items-center justify-content-between User_box">
-                  <Image width={80} src={seven} alt="seven" />
-                  <p className=" fs_md text-white fw-semibold font_poppins mb-0">
+                  <Image
+                    width={80}
+                    className="w_50  h-auto"
+                    src={seven}
+                    alt="seven"
+                  />
+                  <p className=" fs_md text-white fw-semibold font_poppins mb-0 mt-2 mt-lg-0 text-center">
                     7 Years of On- Ground Experience
                   </p>{" "}
                 </div>
               </div>
               <div className=" mt-4 col-6 col-lg-4 col-xl-3">
                 <div className=" d-flex flex-column align-items-center justify-content-between User_box">
-                  <Image width={100} src={plane_img} alt="plane_img" />
-                  <p className=" fs_md text-white fw-semibold font_poppins mb-0">
+                  <Image
+                    width={100}
+                    className="w_50  h-auto"
+                    src={plane_img}
+                    alt="plane_img"
+                  />
+                  <p className=" fs_md text-white fw-semibold font_poppins mb-0 mt-2 mt-lg-0 text-center">
                     30,000+ Satisfied Travelers
                   </p>{" "}
                 </div>
               </div>
               <div className=" mt-4 col-6 col-lg-4 col-xl-3">
                 <div className=" d-flex flex-column align-items-center justify-content-between User_box">
-                  <Image width={80} src={thumbup} alt="thumbup" />
-                  <p className=" fs_md text-white fw-semibold font_poppins mb-0">
+                  <Image
+                    width={80}
+                    className="w_50  h-auto"
+                    src={thumbup}
+                    alt="thumbup"
+                  />
+                  <p className=" fs_md text-white fw-semibold font_poppins mb-0 mt-2 mt-lg-0 text-center">
                     Rated 4.8 Stars on Google Reviews
                   </p>{" "}
                 </div>

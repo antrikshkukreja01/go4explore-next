@@ -11,6 +11,11 @@ const GroupTrips = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
+  function formatPrice(number) {
+    return new Intl.NumberFormat("en-IN", {
+      useGrouping: true,
+    }).format(number);
+  }
   useEffect(() => {
     fetchHomeData()
       .then((data) => setData(data))
@@ -143,20 +148,20 @@ const GroupTrips = () => {
                     {pkg.discounted_price ? (
                       <div className="d-flex align-items-center gap-4">
                         <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                          ₹{pkg.price}
+                          ₹{formatPrice(pkg.price)}
                         </p>
                         <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                          ₹{pkg.discounted_price} per person
+                          ₹{formatPrice(pkg.discounted_price)} per person
                         </p>
                       </div>
                     ) : (
                       <p className="mb-0 d-flex align-items-center text-black fs-md fw-semibold">
-                        ₹{pkg.price} per person
+                        ₹{formatPrice(pkg.price)} per person
                       </p>
                     )}
                     {pkg.discount && (
                       <p className="mb-0 text-decoration-line-through clr_gray fs-md fw-normal">
-                        Discount: ₹{pkg.discount}
+                        Discount: ₹{formatPrice(pkg.discount)}
                       </p>
                     )}
                   </article>

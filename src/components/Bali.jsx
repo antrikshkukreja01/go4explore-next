@@ -96,30 +96,34 @@ const Bali = () => {
       <section id="BaliSlider" className=" py-4 py-sm-5">
         <div className="container">
           <Slider {...settings}>
-            <Link href="/trip/bali">
+            <Link href="/trip/thailand">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
+                unoptimized
                 src={thailand}
                 alt="thailand"
               />
             </Link>
-            <Link href="/trip/bali">
+            <Link href="/trip/bhutan-tour-packages">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
+                unoptimized
                 src={bhutan}
                 alt="bhutan"
               />
             </Link>
-            <Link href="/trip/bali">
+            <Link href="/trip/himachal-pradesh-tour-packages">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
+                unoptimized
                 src={himachal}
                 alt="himachal"
               />
             </Link>
-            <Link href="/trip/bali">
+            <Link href="/trip/meghalaya-tour-packages">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
+                unoptimized
                 src={meghalaya}
                 alt="meghalaya"
               />

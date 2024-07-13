@@ -22,13 +22,13 @@ const AboutUs = () => {
         </div>
       </body>
       <HeaderAboutUs />
-      <AboutUsSection />
-      <WhatWeOffer />
+      {/* <AboutUsSection /> */}
+      {/* <WhatWeOffer /> */}
       <Roadmap />
-      <Founder />
-      <Ourteam />
-      <Reels />
-      <JoinOurTeam />
+      {/* <Founder /> */}
+      {/* <Ourteam /> */}
+      {/* <Reels /> */}
+      {/* <JoinOurTeam /> */}
       <Footer />
     </>
   );

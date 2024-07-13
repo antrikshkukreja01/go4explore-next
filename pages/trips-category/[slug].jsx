@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,8 +15,20 @@ import TravelWithUs from "@/components/TravelWithUs";
 const Test = ({ data }) => {
   const [showviewMore, setShowviewMore] = useState(false);
   const [activeMonth, setActiveMonth] = useState(null);
+  const activeMonthRef = useRef(null);
+
+  useEffect(() => {
+    if (activeMonthRef.current) {
+      activeMonthRef.current.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+      });
+    }
+  }, [activeMonth]);
+
   if (!data) return <div>Loading...</div>;
   if (data.error) return <div>Error loading data</div>;
+
   const handleMonthClick = (month) => {
     setActiveMonth(month); // Set active month
   };
@@ -70,8 +82,7 @@ const Test = ({ data }) => {
           <h2 className=" mb-4 fw-semibold fs_xl font_poppins text-black text-center">
             {data.data.category.categoryname} For You
           </h2>
-
-          <div className="d-none align-items-center gap-2 gap-sm-4 justify-content-lg-center  mb-5 overflow_scroll">
+          <div className="d-flex align-items-center gap-2 gap-sm-4 justify-content-lg-center mb-5 overflow_scroll">
             {[
               "All Trips",
               "June 2024",
@@ -83,6 +94,7 @@ const Test = ({ data }) => {
             ].map((month) => (
               <button
                 key={month}
+                ref={activeMonth === month ? activeMonthRef : null}
                 className={`trip_btn fs_xsm fw-semibold white_space ${
                   activeMonth === month ? "active" : ""
                 }`}

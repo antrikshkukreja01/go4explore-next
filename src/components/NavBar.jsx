@@ -51,7 +51,8 @@ const Nav = () => {
           </Link>
           <div className="d-none d-xl-flex align-items-center gap-3">
             <Link
-              href="/Upcoming"
+              href="/upcoming-trips
+              "
               className="text-decoration-none text-black font_poppins fs_xsm
               fw-medium nav_hover position-relative bg-tranparent"
             >
@@ -72,7 +73,7 @@ const Nav = () => {
               Domestic Trips
             </a>
             <Link
-              href="/AboutUs"
+              href="/aboutus"
               className="text-decoration-none text-black font_poppins fs_xsm
               fw-medium nav_hover position-relative bg-tranparent"
             >
@@ -126,30 +127,34 @@ const Nav = () => {
             <div className="nav-fix">
               <div className="d-flex flex-column">
                 <div className="d-xl-none d-flex flex-column align-items-center gap-3">
-                  <a
-                    className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-                    href="#"
+                  <Link
+                    href="/upcoming-trips
+              "
+                    className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
                   >
                     Upcoming Group Trips
-                  </a>
-                  <a
-                    className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-                    href="#"
+                  </Link>
+                  <Link
+                    href="/trips-category/international-trips"
+                    className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
                   >
                     International Trips
-                  </a>
+                  </Link>
                   <a
                     className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
                     href="#"
                   >
                     Domestic Trips
                   </a>
-                  <a
-                    className="text-decoration-none text-black font_poppins fs_xsm fw-medium nav_hover position-relative"
-                    href="#"
+                  <Link
+                    href="/aboutus"
+                    className="text-decoration-none text-black font_poppins fs_xsm
+              fw-medium nav_hover position-relative bg-tranparent"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </div>
                 <div className="d-xl-none d-flex flex-column justify-content-center align-items-center mt-3">
                   <a
