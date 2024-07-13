@@ -595,7 +595,7 @@ const Test = ({ data }) => {
                         Tempo Traveller <br /> - {occupancy} Occupancy
                       </p>
                       <p className="mb-0 fw-medium fs_md font_poppins text-black">
-                        &#x20b9; {formatPrice(data.data.double_price)}
+                        &#x20b9; {formatPrice(data.data.discounted_price)}
                       </p>
                     </div>
                     <a className="white_space callback_btn mb-2 mt-3 fs_xsm fw-medium w-100 d-inline-block text-center text-decoration-none">
