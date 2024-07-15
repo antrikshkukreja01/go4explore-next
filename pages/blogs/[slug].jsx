@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
-// import blogimg from "../assets/img/webp/blogimg.webp";
+import blogimg from "@/assets/img/webp/blogimg.webp";
 import "../App.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/NavBar";
@@ -90,7 +90,7 @@ const Test = ({ slug }) => {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    style={{ width: "100%", height: "100%" }} // optional
+                    style={{ width: "100%", height: "300px" }} // optional
                     className="  rounded-4 mt-5"
                     src={blogs.image}
                     alt="img2"
@@ -148,11 +148,15 @@ const Test = ({ slug }) => {
                         Request Callback
                       </a>
                     </div>
-                    {/* <Image
+                    <Image
                       className="w-100 h_400 rounded-4   mb-5 "
                       src={blogimg}
                       alt="blogimg"
-                    /> */}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "400px" }} // optional
+                    />
                   </div>
                 </div>
               </div>

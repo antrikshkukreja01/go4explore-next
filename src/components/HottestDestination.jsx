@@ -142,7 +142,7 @@ const HottestDestination = () => {
             <div className="p-4 col-6 col-md-4 col-lg-3">
               <Link
                 className="text-decoration-none"
-                href="/trip/himachal-pradesh-tour-pacakegs"
+                href="/trip/himachal-pradesh-tour-packages"
               >
                 <div className="bg_gradient">
                   <Image

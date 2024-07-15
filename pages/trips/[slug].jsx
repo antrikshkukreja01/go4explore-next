@@ -21,13 +21,16 @@ import img_kashmir from "@/assets/img/webp/Kashmir.webp";
 import img_kerala from "@/assets/img/webp/Kerala.webp";
 import img_uttarakhand from "@/assets/img/webp/Uttarakhand.webp";
 import img_bhutan from "@/assets/img/webp/Bhutan.webp";
+import Head from "next/head";
 
 const Test = ({ data }) => {
   const [occupancy, setOccupancy] = useState("Double");
   const [discountedPrice, setDiscountedPrice] = useState(7499);
   const [originalPrice, setOriginalPrice] = useState(8499);
   const [activeButton, setActiveButton] = useState("Triple");
-
+  const metadata = {
+    title: data.error ? "Error" : data.data.metatitle,
+  };
   const handleOccupancyChange = (newOccupancy) => {
     setOccupancy(newOccupancy);
     setActiveButton(newOccupancy);
@@ -110,7 +113,11 @@ const Test = ({ data }) => {
   return (
     <>
       <Nav />
-
+      <Head>
+        <title>{data.data.metatitle}</title>
+        <meta name="description" content={data.data.metadescription} />
+        <meta name="keywords" content={data.data.metakeywords} />
+      </Head>
       <section className=" py-5">
         <div className=" container">
           <header key={data.data.id} className=" position-relative  px-3  ">

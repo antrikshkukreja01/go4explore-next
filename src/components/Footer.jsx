@@ -214,34 +214,34 @@ const Footer = () => {
                 Backpacking Trips
               </p>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/trip/spiti-valley-tour-packages"
                 >
                   Spiti Valley
-                </a>
+                </Link>
               </article>
               <article>
                 {" "}
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/trip/leh-ladakh-tour-packages"
                 >
                   Leh & Ladakh
-                </a>
+                </Link>
               </article>
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/trips/himachal-backpacking-jibhi-edition"
                 >
                   Himachal Backpacking
-                </a>
+                </Link>
               </article>
               <article>
                 <a
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/trips/meghalaya-backpacking"
                 >
                   Meghalaya
                 </a>
