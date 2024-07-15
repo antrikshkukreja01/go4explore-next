@@ -105,24 +105,29 @@ const Blogs = () => {
           <div className="row align-items-center d-none d-sm-flex">
             <div className="col-xl-7">
               <div key={recentBlog.id}>
-                <div className="bg_gradient mt-3 mx-2 h-auto">
-                  <div className="box_blog h-100">
-                    <Image
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      style={{ width: "100%", height: "100%" }} // optional
-                      src={recentBlog.image}
-                      alt="blog_img"
-                    />
-                    <p className="fs_xsm text-black mt-3 fw-medium font_poppins mb-0">
-                      Published on {formatDate(recentBlog.created_at)}
-                    </p>
-                    <p className="mb-0 mt-2 fs_xl clr_blue font_poppins fw-semibold">
-                      {recentBlog.name}
-                    </p>
+                <Link
+                  className=" text-decoration-none"
+                  href={`/blogs/${encodeURIComponent(recentBlog.slug)}`}
+                >
+                  <div className="bg_gradient mt-3 mx-2 h-auto">
+                    <div className="box_blog h-100">
+                      <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "100%" }} // optional
+                        src={recentBlog.image}
+                        alt="blog_img"
+                      />
+                      <p className="fs_xsm text-black mt-3 fw-medium font_poppins mb-0">
+                        Published on {formatDate(recentBlog.created_at)}
+                      </p>
+                      <p className="mb-0 mt-2 fs_xl clr_blue font_poppins fw-semibold">
+                        {recentBlog.name}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
 

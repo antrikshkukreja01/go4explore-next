@@ -70,7 +70,7 @@ const HottestDestination = () => {
               </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <Link className="text-decoration-none" href="#">
+              <Link className="text-decoration-none" href="/trip/thailand">
                 <div className="bg_gradient">
                   <Image
                     width={200}
@@ -98,7 +98,7 @@ const HottestDestination = () => {
               </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <Link className="text-decoration-none" href="#">
+              <Link className="text-decoration-none" href="/trip/dubai">
                 <div className="bg_gradient">
                   <Image
                     width={200}
@@ -112,7 +112,7 @@ const HottestDestination = () => {
               </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <Link className="text-decoration-none" href="#">
+              <Link className="text-decoration-none" href="/trip/bali">
                 <div className="bg_gradient">
                   <Image
                     width={200}
@@ -126,7 +126,7 @@ const HottestDestination = () => {
               </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <Link className="text-decoration-none" href="/trip/bali">
+              <Link className="text-decoration-none" href="/trip/singapore">
                 <div className="bg_gradient">
                   <Image
                     width={200}
@@ -140,7 +140,10 @@ const HottestDestination = () => {
               </Link>
             </div>
             <div className="p-4 col-6 col-md-4 col-lg-3">
-              <Link className="text-decoration-none" href="/trip/thailand">
+              <Link
+                className="text-decoration-none"
+                href="/trip/himachal-pradesh-tour-pacakegs"
+              >
                 <div className="bg_gradient">
                   <Image
                     width={200}

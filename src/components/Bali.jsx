@@ -96,7 +96,7 @@ const Bali = () => {
       <section id="BaliSlider" className=" py-4 py-sm-5">
         <div className="container">
           <Slider {...settings}>
-            <Link href="/trip/thailand">
+            <Link href="/trips/thailand-full-moon-party">
               <Image
                 className=" rounded-4  w-100  h_baliimg"
                 unoptimized
@@ -183,7 +183,7 @@ const Bali = () => {
               </p>
             </Link>
             <Link
-              href="#"
+              href="/trip/bhutan-tour-packages"
               className=" d-flex flex-column px-2  align-items-center mx-auto text-decoration-none"
             >
               <Image

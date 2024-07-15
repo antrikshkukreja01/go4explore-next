@@ -11,6 +11,8 @@
   --fs-xl: 32px;
   --fs-xxl: 42px;
   --fs-3xl: 50px;
+  --fs-4xl: 70px;
+  --fs-5xl: 80px;
   --clr-gray: #737373;
   --clr-blue: #2755b0;
   --clr-yellow: #f3dc1e;
@@ -45,6 +47,12 @@
 }
 .fs_3xl {
   font-size: var(--fs-3xl);
+}
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+.fs_5xl {
+  font-size: var(--fs-5xl);
 }
 .clr_gray {
   color: var(--clr-gray);
@@ -1022,6 +1030,9 @@ html {
 .top-10 {
   top: 10% !important;
 }
+.start-2 {
+  left: -2.5% !important;
+}
 .start-6 {
   left: 8% !important;
 }
@@ -1032,7 +1043,7 @@ html {
   left: 17% !important;
 }
 .start-10 {
-  left: 10%;
+  left: 9.5%;
 }
 .start-24 {
   left: 24% !important;
@@ -1041,7 +1052,7 @@ html {
   left: 28% !important;
 }
 .start-36 {
-  left: 36% !important;
+  left: 34% !important;
 }
 .start-42 {
   left: 42% !important;
@@ -1053,7 +1064,7 @@ html {
   left: 58% !important;
 }
 .start-63 {
-  left: 63% !important;
+  left: 61% !important;
 }
 .start-74 {
   left: 74% !important;
@@ -1062,7 +1073,7 @@ html {
   left: 70% !important;
 }
 .start-85 {
-  left: 86% !important;
+  left: 84% !important;
 }
 .bottom-10 {
   bottom: 10%;
@@ -1447,26 +1458,14 @@ html {
     top: 10.5%;
   }
 }
-.line {
-  position: absolute;
-  content: "";
-  width: 15px;
-  background-color: #2755b0;
-  height: 100% !important;
-  left: 4%;
-  top: 50%;
-  border-radius: 10px;
-  transform: translateY(-51%);
-}
 
-/* components/Timeline.module.css */
 .timeline {
   position: relative;
+  margin-left: 70px; /* Adjust if necessary */
 }
 
 .event {
   position: relative;
-
   padding: 10px;
   border-radius: 5px;
 }
@@ -1474,11 +1473,13 @@ html {
 .event::before {
   content: "";
   position: absolute;
+  border: 2px solid white;
+  z-index: 2;
   width: 30px;
   height: 30px;
   background-color: #2755b0;
   border-radius: 50%;
-  left: -43px;
+  left: -65px; /* Adjust to align with the line */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1486,10 +1487,17 @@ html {
 .event:not(:last-child)::after {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 10px;
+  height: 150px; /* Adjust to fit the desired spacing */
+  background-color: #2755b0;
+  left: -55px; /* Adjust to align with the line */
+  top: 0%;
+  border-radius: 20px;
+}
 
-  top: 50%;
-  bottom: -50%;
-  left: -19px;
-  transform: translateY(-50%);
+.year_box {
+  border: 2px solid #2755b0;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 10px;
 }

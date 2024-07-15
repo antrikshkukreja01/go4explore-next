@@ -38,9 +38,9 @@ const JoinOurTeam = () => {
 
               <div className="  col-lg-8">
                 <div className="row align-items-center justify-content-end flex-column-reverse flex-md-row ">
-                  <div className="col-6 position-absolute start-50 translate-middle-x bottom-0 d-none d-lg-inline-block">
+                  <div className="col-4 position-absolute start-50 translate-middle-x bottom-0 d-none d-lg-inline-block">
                     <Image
-                      className=" w-75 h_400"
+                      className=" w-70 h_400"
                       src={caption_img}
                       alt="caption_img"
                     />
@@ -54,8 +54,11 @@ const JoinOurTeam = () => {
                   </div>
                   <div className="  col-md-7 mt-4 ">
                     {" "}
-                    <p className=" mb-0 fs_3xl text-white font_poppins fw-bold">
-                      50+ on-ground & coolest Trip Captains
+                    <p className=" mb-0 fs_xl text-white font_poppins fw-semibold">
+                      <span className=" fs_5xl"> 50+</span> on-ground & coolest{" "}
+                    </p>
+                    <p className=" mb-0 fs_4xl text-white font_poppins fw-semibold">
+                      Trip Captains
                     </p>
                   </div>
                 </div>
