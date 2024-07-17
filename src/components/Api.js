@@ -12,6 +12,18 @@ export async function fetchHomeData() {
     throw new Error(`Failed to fetch data: ${error.message}`);
   }
 }
+//  ==================== TRAVEL GUIDE ====================
+
+export async function fetchGuideData() {
+  try {
+    const response = await axios.get(
+      "https://go4explore-api.cyberoze.com/api/travel-guide/" + params
+    );
+    return response.data;
+  } catch (error) {
+    throw new Error(`Failed to fetch data: ${error.message}`);
+  }
+}
 
 //  ==================== TRIPS ====================
 

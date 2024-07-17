@@ -166,6 +166,9 @@
 .h_160 {
   height: 160px;
 }
+.h_200 {
+  height: 180px !important;
+}
 .slick-prev:before,
 .slick-next:before {
   color: white !important;
@@ -189,6 +192,31 @@
 .slick-next:before {
   content: url(../assets/img/webp/next.webp) !important;
 } */
+#text img {
+  height: 500px !important;
+  width: 90% !important;
+  margin-top: 24px;
+  border-radius: 20px !important;
+}
+/* #text p {
+  display: flex !important;
+  justify-content: center !important;
+} */
+#text span {
+  font-family: var(--font-Poppins) !important;
+  font-size: var(--fs-xsm) !important;
+  background: none !important;
+}
+#text h3 {
+  padding-bottom: 0px !important;
+}
+#text h3 span {
+  font-family: var(--font-Poppins) !important;
+  font-size: var(--fs-xl) !important;
+  background: none !important;
+  padding-bottom: 0px !important;
+  font-weight: 500 !important;
+}
 
 .slick-prev {
   top: 35% !important;
@@ -464,4 +492,19 @@ nav {
   .h-300 {
     height: 650px !important;
   }
+}
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.image-row {
+  display: flex;
+  gap: 16px;
+}
+
+.image {
+  flex: 1;
+  position: relative;
 }

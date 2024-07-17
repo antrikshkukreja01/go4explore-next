@@ -17,7 +17,7 @@ const Founder = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          class=" position-relative py-5 pt-5 pb-0 pb-lg-5  px-3 px-lg-0"
+          className=" position-relative py-5 pt-5 pb-0 pb-lg-5  px-3 px-lg-0"
         >
           <p className=" fw-bolder fs_3xl font_poppins text-center text-white  d-lg-none mb-3 ">
             Founder

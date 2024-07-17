@@ -39,12 +39,12 @@ const Footer = () => {
               </article>
 
               <article>
-                <a
+                <Link
                   className=" fw-normal fs_xsm text-black font_poppins text-decoration-none"
-                  href="#"
+                  href="/careers"
                 >
                   Career With Us
-                </a>
+                </Link>
               </article>
               <article>
                 <a

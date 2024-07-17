@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../App.css";
 import Footer from "@/components/Footer";
-import Nav from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import axios from "axios";
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ const Test = ({ data }) => {
 
   return (
     <>
-      <Nav />
+      <NavBar />
 
       <section className="py-5">
         <div className="container">

@@ -6,7 +6,7 @@ import axios from "axios";
 import blogimg from "@/assets/img/webp/blogimg.webp";
 import "../App.css";
 import Footer from "@/components/Footer";
-import Nav from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -34,7 +34,7 @@ const Test = ({ slug }) => {
 
   return (
     <>
-      <Nav />
+      <NavBar />
 
       <section className=" py-5">
         <div className=" container">

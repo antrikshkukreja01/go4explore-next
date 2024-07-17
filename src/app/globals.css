@@ -1501,3 +1501,13 @@ html {
   padding: 5px 20px;
   border-radius: 10px;
 }
+
+#Accordion div h2 button {
+  width: 100% !important;
+  display: flex !important ;
+  justify-content: space-between;
+  padding: 20px;
+}
+#Accordion div h2 button svg {
+  rotate: 270deg;
+}

@@ -30,7 +30,7 @@ const AboutUsSection = () => {
               About Us
             </p>
           </span>
-          <div class=" width-100  mx-auto  d-flex flex-column pt-4">
+          <div className=" width-100  mx-auto  d-flex flex-column pt-4">
             <p className=" fw-bold fs_xxl text-center font_poppins text-white mb-3">
               Who We Are?
             </p>{" "}

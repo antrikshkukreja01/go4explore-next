@@ -78,7 +78,7 @@ const Blogs = () => {
               <div key={blog.id} className=" col-md-6 col-xl-12 ">
                 <Link
                   className=" text-decoration-none"
-                  href={`/blogs/${encodeURIComponent(blog.slug)}`}
+                  href={`/blog/${encodeURIComponent(blog.slug)}`}
                 >
                   <div className="bg_gradient mt-3 mx-2 h-auto">
                     <div className="box_blog h-100">
@@ -107,7 +107,7 @@ const Blogs = () => {
               <div key={recentBlog.id}>
                 <Link
                   className=" text-decoration-none"
-                  href={`/blogs/${encodeURIComponent(recentBlog.slug)}`}
+                  href={`/blog/${encodeURIComponent(recentBlog.slug)}`}
                 >
                   <div className="bg_gradient mt-3 mx-2 h-auto">
                     <div className="box_blog h-100">
@@ -137,7 +137,7 @@ const Blogs = () => {
                   <div key={blog.id} className="mt-4 col-md-6 col-xl-12">
                     <Link
                       className=" text-decoration-none"
-                      href={`/blogs/${encodeURIComponent(blog.slug)}`}
+                      href={`/blog/${encodeURIComponent(blog.slug)}`}
                     >
                       <div className="bg_gradient">
                         <div className="row box_blog_small align-items-center w-100">

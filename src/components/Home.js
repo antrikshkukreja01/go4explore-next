@@ -11,7 +11,7 @@ import HaveDoubt from "@/components/HaveDoubt";
 import Collaborated from "@/components/Collabrated";
 import StressFreePlanes from "@/components/StressFreePlanes";
 import Reviews from "@/components/Reviews";
-import Blogs from "@/components/Blogs";
+import Blogs from "@/components/Blog";
 import TravelWithUs from "@/components/TravelWithUs";
 import Footer from "@/components/Footer";
 

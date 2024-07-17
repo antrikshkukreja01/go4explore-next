@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import Slider from "react-slick";
-import "../App.css";
+import "../../App.css";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
@@ -20,10 +20,10 @@ function formatPrice(number) {
   }).format(number);
 }
 
-const Trip = ({ data }) => {
+const Test = ({ data }) => {
   if (!data) return <div>Loading...</div>;
   if (data.error) return <div>Error loading data</div>;
-  const [expandedOffer, setExpandedOffer] = useState(null);
+  const [expandedpage_data, setExpandedpage_data] = useState(null);
   const metadata = {
     title: data.error ? "Error" : data.data.metatitle,
   };
@@ -194,34 +194,37 @@ const Trip = ({ data }) => {
   };
 
   const text = expanded
-    ? data.data.offer.description
-    : `${data.data.offer.description.substring(0, 509)}...`;
+    ? data.data.page_data.description
+    : `${data.data.page_data.descriptions.substring(0, 509)}...`;
 
   return (
     <>
       <Head>
-        <title>{data.data.offer.metatitle}</title>
-        <meta name="description" content={data.data.offer.metadescription} />
-        <meta name="keywords" content={data.data.offer.metakeywords} />
+        <title>{data.data.page_data.metatitle}</title>
+        <meta
+          name="description"
+          content={data.data.page_data.metadescription}
+        />
+        <meta name="keywords" content={data.data.page_data.metakeywords} />
       </Head>
       <NavBar />
 
       <section id="trippage" className="py-5 ">
         <div className="container">
           <div className=" px-3">
-            <header key={data.data.offer.id} className="position-relative ">
+            <header key={data.data.page_data.id} className="position-relative ">
               <div
                 className="image-container"
                 style={{ position: "relative", width: "100%", height: "500px" }}
               >
                 <Image
                   className="rounded-4 height_200"
-                  src={data.data.offer.uri}
+                  src={data.data.page_data.image}
                   width={0}
                   height={0}
                   sizes="100vw"
                   style={{ width: "100%", height: "500px" }}
-                  alt={data.data.offer.title}
+                  alt={data.data.page_data.title}
                 />
                 <div
                   className="overlay rounded-4"
@@ -238,20 +241,20 @@ const Trip = ({ data }) => {
               </div>
 
               <h1 className="text-white w-100 text-center fw-semibold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
-                {data.data.offer.title}
+                {data.data.page_data.title}
               </h1>
             </header>
 
             <div className="bg_gray p-4 rounded-3 mt-4 mb-5 ">
               <h2 className="mb-0 fw-semibold fs_lg text-black font_poppins border-bottom border-2 pb-3">
-                About {data.data.offer.title}
+                About {data.data.page_data.title}
               </h2>
               <p
                 className="fs_xsm fw-normal text-black font_poppins mb-0 mt-4"
                 dangerouslySetInnerHTML={{ __html: text }}
               ></p>
               <div className="d-flex justify-content-end">
-                {data.data.offer.description.length > 509 && (
+                {data.data.page_data.descriptions.length > 509 && (
                   <button
                     onClick={toggleReadMore}
                     className="btn btn-link text-decoration-none fw-medium fs_sm font_poppins text-black mt-3"
@@ -261,89 +264,6 @@ const Trip = ({ data }) => {
                 )}
               </div>
             </div>
-          </div>
-
-          <div className="row align-items-center">
-            <div className="col-sm-8">
-              <div>
-                <div className="mb-3" key={data.data.offer.id}>
-                  <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
-                    {data.data.offer.category1}
-                  </h2>
-                </div>
-
-                {renderPackages(data.data.trip.code1)}
-              </div>
-            </div>
-            <div className="col-sm-4 mt-4 mt-xl-0">
-              <div className="border_box rounded-4 p-4 p-sm-5">
-                <p className="text-center mb-0 fw-semibold fs_xl font_poppins text-black">
-                  Have Doubts? Talk To Our Travel Experts!
-                </p>
-                <p className="mb-0 text-center fs_xsm fw-normal mt-3 font_poppins text-black">
-                  Make your move, fill out your details now!
-                </p>
-                <div className="d-flex flex-column align-items-center gap-3 gap-sm-4 mt-4">
-                  <input
-                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
-                    type="text"
-                    placeholder="Full Name"
-                  />
-                  <input
-                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
-                    type="tel"
-                    placeholder="Phone Number"
-                  />
-                  <input
-                    className="w-100 input_style_2 fs_xsm bg_gray text-black fw-normal rounded-5 py-2 text-center"
-                    type="email"
-                    placeholder="Email"
-                  />
-                  <a
-                    className="callback_btn white_space w-100 text-center text-decoration-none fs_xsm fw-medium"
-                    href="#"
-                  >
-                    Request Callback
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-5">
-            <div className="mb-3" key={data.data.offer.id}>
-              <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
-                {data.data.offer.category2}
-              </h2>
-            </div>
-
-            {renderPackages(data.data.trip.code2)}
-          </div>
-          <div className="mt-5">
-            <div className="mb-3" key={data.data.offer.id}>
-              <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
-                {data.data.offer.category3}
-              </h2>
-            </div>
-
-            {renderPackages(data.data.trip.code3)}
-          </div>
-          <div className="mt-5">
-            <div className="mb-3" key={data.data.offer.id}>
-              <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
-                {data.data.offer.category4}
-              </h2>
-            </div>
-
-            {renderPackages(data.data.trip.code4)}
-          </div>
-          <div className="mt-5">
-            <div className="mb-3" key={data.data.offer.id}>
-              <h2 className="font_poppins text-black fw-bold fs_xl mb-0 ms-3">
-                {data.data.offer.category5}
-              </h2>
-            </div>
-
-            {renderPackages(data.data.trip.code5)}
           </div>
         </div>
       </section>
@@ -356,11 +276,11 @@ const Trip = ({ data }) => {
 };
 
 export async function getServerSideProps(context) {
-  const { slug } = context.params;
+  const { city, slug } = context.params;
 
   try {
     const res = await axios.get(
-      `https://go4explore-api.cyberoze.com/api/trips/offers/${slug}`
+      `https://go4explore-api.cyberoze.com/api/tours/${city}/${slug}`
     );
     const data = res.data;
     console.log(data);
@@ -379,4 +299,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default Trip;
+export default Test;

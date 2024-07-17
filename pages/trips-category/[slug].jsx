@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../App.css";
 import Footer from "@/components/Footer";
-import Nav from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import axios from "axios";
 import downarrow from "@/assets/img/webp/down_img.webp";
@@ -75,7 +75,7 @@ const Test = ({ data }) => {
 
   return (
     <>
-      <Nav />
+      <NavBar />
 
       <section className="py-5">
         <div className="container">

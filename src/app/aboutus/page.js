@@ -11,6 +11,7 @@ import Founder from "@/components/Founder";
 import Ourteam from "@/components/OurTeam";
 import Reels from "@/components/Reels";
 import JoinOurTeam from "@/components/JoinOurTeam";
+import LifeatGo4explore from "@/components/LifeatGo4explore";
 
 const AboutUs = () => {
   return (
@@ -28,7 +29,8 @@ const AboutUs = () => {
       <Founder />
       <Ourteam />
       <Reels />
-      {/* <JoinOurTeam /> */}
+      <JoinOurTeam />
+      <LifeatGo4explore />
       <Footer />
     </>
   );

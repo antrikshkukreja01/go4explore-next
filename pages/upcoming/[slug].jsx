@@ -6,7 +6,7 @@ import axios from "axios";
 import Slider from "react-slick";
 import "../App.css";
 import Footer from "@/components/Footer";
-import Nav from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -71,7 +71,7 @@ const Test = ({ slug }) => {
   };
   return (
     <>
-      <Nav />
+      <NavBar />
       <header className=" h_500 bg_blue d-flex align-items-center justify-content-center">
         <h1 className=" text-white fw-bold fs_xxl font_poppins">Trips</h1>
         {/* {data.data.category.map((category) => (

@@ -13,7 +13,7 @@ import van from "@/assets/img/webp/black_van.webp";
 import meals from "@/assets/img/webp/meals.webp";
 import local from "@/assets/img/webp/local.webp";
 import Footer from "@/components/Footer";
-import Nav from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
 import img_himachal from "@/assets/img/webp/Himachal.webp";
@@ -112,7 +112,7 @@ const Test = ({ data }) => {
   };
   return (
     <>
-      <Nav />
+      <NavBar />
       <Head>
         <title>{data.data.metatitle}</title>
         <meta name="description" content={data.data.metadescription} />
@@ -121,15 +121,34 @@ const Test = ({ data }) => {
       <section className=" py-5">
         <div className=" container">
           <header key={data.data.id} className=" position-relative  px-3  ">
-            <Image
-              className="  rounded-4"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "500px" }} // optional
-              src={data.data.image}
-              alt={data.data.name}
-            />
+            <div
+              className="image-container"
+              style={{ position: "relative", width: "100%", height: "500px" }}
+            >
+              <Image
+                className="rounded-4"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "500px" }} // optional
+                src={data.data.image}
+                alt={data.data.name}
+              />
+              <div
+                className="overlay rounded-4"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0, 0, 0, 0.3)",
+                  // adjust the opacity as needed
+                  pointerEvents: "none", // allows clicks to pass through to the image
+                }}
+              ></div>
+            </div>
+
             <h1 className=" text-white fw-semibold fs_xxl font_poppins position-absolute top-50 start-50 translate-middle">
               {data.data.name}
             </h1>
